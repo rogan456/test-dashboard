@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@deck.gl/core": "^9.1.12",
+    "@deck.gl/layers": "^9.1.12",
+    "@deck.gl/react": "^9.1.12",
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@mui/icons-material": "^7.1.0",

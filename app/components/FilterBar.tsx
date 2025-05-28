@@ -22,11 +22,11 @@ interface FilterBarProps {
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({ showActivityType = true }) => (
-  <div className="flex flex-wrap gap-4 p-4 pb-0 items-cente rounded-xl w-full">
-    <div className="flex-1 min-w-[140px] max-w-xs">
+  <div className="flex flex-wrap gap-4 p-4 pb-0 items-center rounded-xl w-full">
+    <div className=" border rounded flex-1 min-w-[140px] max-w-xs">
       <Select instanceId="district-select" options={districtOptions} placeholder="District" />
     </div>
-    <div className="flex-1 min-w-[140px] max-w-xs">
+    <div className="border rounded flex-1 min-w-[140px] max-w-xs">
       <Select instanceId="city-select" options={cityOptions} placeholder="City" />
     </div>
     <input
@@ -40,7 +40,7 @@ const FilterBar: React.FC<FilterBarProps> = ({ showActivityType = true }) => (
       placeholder="End Date"
     />
     {showActivityType && (
-      <div className="flex-1 min-w-[140px] max-w-xs">
+      <div className="border rounded flex-1 min-w-[140px] max-w-xs">
         <Select instanceId="activity-type-select" options={activityTypeOptions} placeholder="Activity Type" />
       </div>
     )}

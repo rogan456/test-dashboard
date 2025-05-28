@@ -1,46 +1,13 @@
 'use client';
 import React, { useState } from 'react';
 
-type Detail = { Comment: string; Others: number };
 type RowData = {
-  date: string;
-  activityType: string;
-  location: string;
-  details: Detail[];
+  ActivityDate: string;
+  ActivityType: string;
+  CityName: string;
+  Notes: string;
+  StaffInvolved: string;
 };
-
-const rows: RowData[] = [
-  {
-    date: '2024-05-01',
-    activityType: 'Training',
-    location: 'Atlanta',
-    details: [{ Comment: 'Leadership Workshop', Others: 30 }],
-  },
-  {
-    date: '2024-05-03',
-    activityType: 'Event',
-    location: 'Savannah',
-    details: [{ Comment: 'Annual Meetup', Others: 120 }],
-  },
-  {
-    date: '2024-05-05',
-    activityType: 'Seminar',
-    location: 'Augusta',
-    details: [{ Comment: 'Safety Seminar', Others: 45 }],
-  },
-  {
-    date: '2024-05-07',
-    activityType: 'Workshop',
-    location: 'Macon',
-    details: [{ Comment: 'Tech Workshop', Others: 25 }],
-  },
-  {
-    date: '2024-05-10',
-    activityType: 'Conference',
-    location: 'Columbus',
-    details: [{ Comment: 'City Conference', Others: 80 }],
-  },
-];
 
 function CollapsibleRow({ row }: { row: RowData }) {
   const [open, setOpen] = useState(false);
@@ -67,9 +34,16 @@ function CollapsibleRow({ row }: { row: RowData }) {
             </span>
           </button>
         </td>
-        <td className="p-2 break-words">{row.date}</td>
-        <td className="p-2 break-words">{row.activityType}</td>
-        <td className="p-2 break-words">{row.location}</td>
+        <td className="p-2 break-words">
+  {new Intl.DateTimeFormat('en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: '2-digit',
+  }).format(new Date(row.ActivityDate))}
+</td>
+
+        <td className="p-2 break-words">{row.ActivityType}</td>
+        <td className="p-2 break-words">{row.CityName}</td>
       </tr>
       {open && (
         <tr className="bg-blue-50 rounded-b-lg">
@@ -78,17 +52,15 @@ function CollapsibleRow({ row }: { row: RowData }) {
               <table className="w-full text-sm">
                 <thead>
                   <tr>
-                    <th className="text-left p-1 text-blue-600">Comment</th>
-                    <th className="text-right p-1 text-blue-600">Others</th>
+                    <th className="text-left p-1 text-blue-600">Notes</th>
+                    <th className="text-right p-1 text-blue-600">Staff Involved</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {row.details.map((detail, idx) => (
-                    <tr key={idx}>
-                      <td className="p-1 break-words">{detail.Comment}</td>
-                      <td className="p-1 text-right">{detail.Others}</td>
-                    </tr>
-                  ))}
+                  <tr>
+                    <td className="p-1 break-words">{row.Notes}</td>
+                    <td className="p-1 text-right">{row.StaffInvolved}</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
@@ -99,7 +71,13 @@ function CollapsibleRow({ row }: { row: RowData }) {
   );
 }
 
-export default function CollapsibleTable() {
+export default function CollapsibleTable({ data = [] }: { data?: RowData[] }) {
+  const [page, setPage] = useState(1);
+  const pageSize = 10;
+  const pageCount = Math.ceil(data.length / pageSize);
+
+  const paginatedData = data.slice((page - 1) * pageSize, page * pageSize);
+
   return (
     <div className="w-full overflow-x-auto rounded-2xl shadow-lg bg-white border border-gray-200">
       <table className="w-full min-w-[600px]">
@@ -112,11 +90,31 @@ export default function CollapsibleTable() {
           </tr>
         </thead>
         <tbody>
-          {rows.map((row, idx) => (
-            <CollapsibleRow key={idx} row={row} />
+          {paginatedData.map((row, idx) => (
+            <CollapsibleRow key={idx + (page - 1) * pageSize} row={row} />
           ))}
         </tbody>
       </table>
+      {/* Pagination Controls */}
+      <div className="flex justify-center items-center gap-2 py-4">
+        <button
+          className="px-3 py-1 rounded bg-blue-500 text-white disabled:bg-gray-300"
+          onClick={() => setPage((p) => Math.max(1, p - 1))}
+          disabled={page === 1}
+        >
+          Prev
+        </button>
+        <span>
+          Page {page} of {pageCount}
+        </span>
+        <button
+          className="px-3 py-1 rounded bg-blue-500 text-white disabled:bg-gray-300"
+          onClick={() => setPage((p) => Math.min(pageCount, p + 1))}
+          disabled={page === pageCount}
+        >
+          Next
+        </button>
+      </div>
     </div>
   );
 }
