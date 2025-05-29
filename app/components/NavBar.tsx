@@ -15,15 +15,15 @@ const NavBar = () => {
 
 
   return (
-    <nav className='flex justify-between items-center mb-5 px-5 h-14'>
+    <nav className='flex justify-between items-center px-5  h-14'>
       <div className='font-bold text-lg text-black'>
         <Link href="/">
           <Image
-            className="pt-6"
+            className="pt-4"
             src="/g_logo.jpg"
             alt="Georgia Municipal Association Logo"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             priority
           />
         </Link>

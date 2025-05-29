@@ -39,5 +39,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-app/activities/fetchActivities.ts
+app/activities/route.ts
 public/data

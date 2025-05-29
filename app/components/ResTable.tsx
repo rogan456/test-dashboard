@@ -7,6 +7,8 @@ type RowData = {
   CityName: string;
   Notes: string;
   StaffInvolved: string;
+  CitySort: string;
+  EnteredByStaffName: string;
 };
 
 function CollapsibleRow({ row }: { row: RowData }) {
@@ -43,23 +45,26 @@ function CollapsibleRow({ row }: { row: RowData }) {
 </td>
 
         <td className="p-2 break-words">{row.ActivityType}</td>
-        <td className="p-2 break-words">{row.CityName}</td>
+        <td className="p-2 break-words">{row.EnteredByStaffName}</td>
+        <td className="p-2 break-words">{row.CitySort}</td>
       </tr>
       {open && (
         <tr className="bg-blue-50 rounded-b-lg">
-          <td colSpan={4} className="p-4 rounded-b-lg">
+          <td colSpan={6} className="p-4 rounded-b-lg">
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
-                <thead>
-                  <tr>
-                    <th className="text-left p-1 text-blue-600">Notes</th>
-                    <th className="text-right p-1 text-blue-600">Staff Involved</th>
-                  </tr>
-                </thead>
                 <tbody>
                   <tr>
+                    <th className="text-left p-1 text-blue-600">Staff Involved</th>
+                  </tr>
+                  <tr>
+                    <td className="p-1 text-left">{row.StaffInvolved}</td>
+                  </tr>
+                  <tr>
+                    <th className="text-left p-1 text-blue-600">Notes</th>
+                  </tr>
+                  <tr>
                     <td className="p-1 break-words">{row.Notes}</td>
-                    <td className="p-1 text-right">{row.StaffInvolved}</td>
                   </tr>
                 </tbody>
               </table>
@@ -86,6 +91,7 @@ export default function CollapsibleTable({ data = [] }: { data?: RowData[] }) {
             <th className="p-2 w-10 rounded-tl-2xl"></th>
             <th className="p-2 text-left">Date</th>
             <th className="p-2 text-left">Activity Type</th>
+            <th className="p-2 text-left">Entered By</th>
             <th className="p-2 text-left rounded-tr-2xl">Location</th>
           </tr>
         </thead>
