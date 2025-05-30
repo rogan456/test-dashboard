@@ -2,7 +2,7 @@
 import { TrashIcon } from '@heroicons/react/24/outline'; 
 import React from 'react';
 import Select from 'react-select';
-
+import DiscreteSliderLabel from './PopSlider'; 
 const districtOptions = [
   { value: 'district1', label: 'District 1' },
   { value: 'district2', label: 'District 2' },
@@ -11,26 +11,47 @@ const districtOptions = [
 const cityOptions = [
   { value: 'atlanta', label: 'Atlanta' },
   { value: 'savannah', label: 'Savannah' },
+  { value: 'waycross', label: 'Waycross' },
 ];
 
 const activityTypeOptions = [
-  { value: 'training', label: 'Training' },
-  { value: 'event', label: 'Event' },
+  { value: 'call', label: 'Call' },
+  { value: 'email', label: 'Email' },
+  { value: 'visit', label: 'Visit' },
+  { value: 'text', label: 'Text' },
+  { value: 'district meeting', label: 'District Meeting' },
+  { value: 'call', label: 'CALL' },
 ];
+
+const dateOptions = [
+  { value: 'last30days', label: 'Last 30 Days' },
+  { value: 'last90days', label: 'Last 90 Days' },
+  { value: 'last6months', label: 'Last 6 Months' }, 
+  { value: 'last12months', label: 'Last 12 Months' },
+  { value: 'Custom', label: 'All Custom' },
+];
+
+
+
 
 interface FilterBarProps {
   showActivityType?: boolean;
   cityFilter: string;
   setCityFilter: (city: string) => void;
+  activityTypeFilter: string;
+  setActivityTypeFilter: (type: string) => void;
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({
   showActivityType = true,
   cityFilter,
   setCityFilter,
+  activityTypeFilter,
+  setActivityTypeFilter,
 }) => {
   const handleReset = () => {
     setCityFilter('');
+    setActivityTypeFilter('');
     // Reset other filters here as needed
   };
 
@@ -49,21 +70,27 @@ const FilterBar: React.FC<FilterBarProps> = ({
           isClearable
         />
       </div>
-      <input
-        type="date"
-        className="border rounded p-2 flex-1 min-w-[120px] max-w-xs"
-        placeholder="Start Date"
-      />
-      <input
-        type="date"
-        className="border rounded p-2 flex-1 min-w-[120px] max-w-xs"
-        placeholder="End Date"
-      />
+      <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+        <Select options={dateOptions} placeholder="Date" />
+      </div>
+    
+      
       {showActivityType && (
-        <div className="border rounded flex-1 min-w-[140px] max-w-xs">
-          <Select instanceId="activity-type-select" options={activityTypeOptions} placeholder="Activity Type" />
-        </div>
-      )}
+  <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+    <Select
+      instanceId="activity-type-select"
+      options={activityTypeOptions}
+      placeholder="Activity Type"
+      value={
+        activityTypeOptions.find(
+          opt => opt.value.toLowerCase() === activityTypeFilter.toLowerCase()
+        ) || null
+      }
+      onChange={selected => setActivityTypeFilter(selected ? selected.value : '')}
+      isClearable
+    />
+  </div>
+)}
       <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition font-semibold shadow min-w-[100px]">
         Filter
       </button>
