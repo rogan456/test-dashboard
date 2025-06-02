@@ -17,6 +17,8 @@ export default async function Page() {
       CityId: item.CityId,
       CitySort: item.CitySort ?? '',
       EnteredByStaffName: item.EnteredByStaffName ?? '',
+      Population: item.Population ?? '',
+      District: item.District ?? '',
     }))
     .sort(
       (a: { ActivityDate: string }, b: { ActivityDate: string }) =>
