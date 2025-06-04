@@ -19,7 +19,7 @@ Object.entries(dist).forEach(([cityId, districtId]) => {
 const districtOptions = Object.entries(districtMap).map(([districtId, cityIds]) => ({
   value: districtId,
   label: `District ${districtId}`,
-  cityIds, // array of CityIDs in this district
+  cityIds,
 }));
 
 const cityOptions = Object.entries(cities).map(([id, name]) => {
@@ -49,12 +49,12 @@ const dateOptions = [
 
 interface FilterBarProps {
   showActivityType?: boolean;
-  cityFilter: string;
-  setCityFilter: (city: string) => void;
-  activityTypeFilter: string;
-  setActivityTypeFilter: (type: string) => void;
-  districtFilter?: string;
-  setDistrictFilter?: (district: string) => void;
+  cityFilter: string[];
+  setCityFilter: (cities: string[]) => void;
+  activityTypeFilter: string[];
+  setActivityTypeFilter: (types: string[]) => void;
+  districtFilter: string[];
+  setDistrictFilter: (districts: string[]) => void;
   dateFilter: string;
   setDateFilter: (val: string) => void;
   customDateRange: { start: string; end: string };
@@ -74,47 +74,58 @@ const FilterBar: React.FC<FilterBarProps> = ({
   customDateRange,
   setCustomDateRange,
 }) => {
-  // Filter city options based on selected district
+  // Filter city options based on selected district(s)
   const filteredCityOptions = useMemo(() => {
-    if (!districtFilter) return cityOptions;
-    const allowedCityIds = districtOptions.find(d => d.value === districtFilter)?.cityIds || [];
+    if (!districtFilter.length) return cityOptions;
+    const allowedCityIds = districtOptions
+      .filter(d => districtFilter.includes(d.value))
+      .flatMap(d => d.cityIds);
     return cityOptions.filter(opt => allowedCityIds.includes(opt.value));
   }, [districtFilter]);
 
-  // Filter district options based on selected city
+  // Filter district options based on selected city(s)
   const filteredDistrictOptions = useMemo(() => {
-    if (!cityFilter) return districtOptions;
-    return districtOptions.filter(d => d.cityIds.includes(cityFilter));
+    if (!cityFilter.length) return districtOptions;
+    return districtOptions.filter(d =>
+      d.cityIds.some(cityId => cityFilter.includes(cityId))
+    );
   }, [cityFilter]);
 
-  // Reset cityFilter if not in selected district
+  // Reset cityFilter if not in selected district(s)
   useEffect(() => {
     if (
-      districtFilter &&
-      cityFilter &&
-      !filteredCityOptions.some(opt => opt.value === cityFilter)
+      districtFilter.length &&
+      cityFilter.length &&
+      !cityFilter.every(cityId =>
+        filteredCityOptions.some(opt => opt.value === cityId)
+      )
     ) {
-      setCityFilter('');
+      setCityFilter(cityFilter.filter(cityId =>
+        filteredCityOptions.some(opt => opt.value === cityId)
+      ));
     }
   }, [districtFilter, cityFilter, filteredCityOptions, setCityFilter]);
 
-  // Reset districtFilter if not in selected city
+  // Reset districtFilter if not in selected city(s)
   useEffect(() => {
     if (
-      cityFilter &&
-      districtFilter &&
-      !filteredDistrictOptions.some(opt => opt.value === districtFilter)
+      cityFilter.length &&
+      districtFilter.length &&
+      !districtFilter.every(districtId =>
+        filteredDistrictOptions.some(opt => opt.value === districtId)
+      )
     ) {
-      setDistrictFilter && setDistrictFilter('');
+      setDistrictFilter(districtFilter.filter(districtId =>
+        filteredDistrictOptions.some(opt => opt.value === districtId)
+      ));
     }
   }, [cityFilter, districtFilter, filteredDistrictOptions, setDistrictFilter]);
 
   const handleReset = () => {
-    setCityFilter('');
-    setActivityTypeFilter('');
-    if (setDistrictFilter) setDistrictFilter('');
-    // Reset other filters here as needed
-    setDateFilter(''); // or '' if you want to show all dates by default
+    setCityFilter([]);
+    setActivityTypeFilter([]);
+    setDistrictFilter([]);
+    setDateFilter('last30days');
     setCustomDateRange({ start: '', end: '' });
   };
 
@@ -125,9 +136,10 @@ const FilterBar: React.FC<FilterBarProps> = ({
           instanceId="district-select"
           options={filteredDistrictOptions}
           placeholder="District"
-          value={filteredDistrictOptions.find(opt => opt.value === districtFilter) || null}
-          onChange={selected => setDistrictFilter && setDistrictFilter(selected ? selected.value : '')}
+          value={filteredDistrictOptions.filter(opt => districtFilter.includes(opt.value))}
+          onChange={selected => setDistrictFilter(selected ? selected.map((s: any) => s.value) : [])}
           isClearable
+          isMulti
         />
       </div>
       <div className="border rounded flex-1 min-w-[140px] max-w-xs">
@@ -135,50 +147,48 @@ const FilterBar: React.FC<FilterBarProps> = ({
           instanceId="city-select"
           options={filteredCityOptions}
           placeholder="City"
-          value={filteredCityOptions.find(opt => opt.value === cityFilter) || null}
-          onChange={selected => setCityFilter(selected ? selected.value : '')}
+          value={filteredCityOptions.filter(opt => cityFilter.includes(opt.value))}
+          onChange={selected => setCityFilter(selected ? selected.map((s: any) => s.value) : [])}
           isClearable
+          isMulti
         />
       </div>
       <div className="border rounded flex-1 min-w-[140px] max-w-xs">
-  <Select
-    options={dateOptions}
-    placeholder="Date"
-    value={dateOptions.find(opt => opt.value === dateFilter) || null}
-    onChange={selected => setDateFilter(selected ? selected.value : '')}
-    isClearable={false}
-  />
-  </div>
-  {dateFilter === 'Custom' && (
-    <div className="flex gap-2 items-center">
-      <input
-        type="date"
-        value={customDateRange.start}
-        onChange={e => setCustomDateRange({ ...customDateRange, start: e.target.value })}
-        className="border rounded px-2 py-1"
-      />
-      <span>to</span>
-      <input
-        type="date"
-        value={customDateRange.end}
-        onChange={e => setCustomDateRange({ ...customDateRange, end: e.target.value })}
-        className="border rounded px-2 py-1"
-      />
-    </div>
-  )}
+        <Select
+          options={dateOptions}
+          placeholder="Date"
+          value={dateOptions.find(opt => opt.value === dateFilter) || null}
+          onChange={selected => setDateFilter(selected ? selected.value : '')}
+          isClearable={false}
+        />
+      </div>
+      {dateFilter === 'Custom' && (
+        <div className="flex gap-2 items-center">
+          <input
+            type="date"
+            value={customDateRange.start}
+            onChange={e => setCustomDateRange({ ...customDateRange, start: e.target.value })}
+            className="border rounded px-2 py-1"
+          />
+          <span>to</span>
+          <input
+            type="date"
+            value={customDateRange.end}
+            onChange={e => setCustomDateRange({ ...customDateRange, end: e.target.value })}
+            className="border rounded px-2 py-1"
+          />
+        </div>
+      )}
       {showActivityType && (
         <div className="border rounded flex-1 min-w-[140px] max-w-xs">
           <Select
             instanceId="activity-type-select"
             options={activityTypeOptions}
             placeholder="Activity Type"
-            value={
-              activityTypeOptions.find(
-                opt => opt.value.toLowerCase() === activityTypeFilter.toLowerCase()
-              ) || null
-            }
-            onChange={selected => setActivityTypeFilter(selected ? selected.value : '')}
+            value={activityTypeOptions.filter(opt => activityTypeFilter.includes(opt.value))}
+            onChange={selected => setActivityTypeFilter(selected ? selected.map((s: any) => s.value) : [])}
             isClearable
+            isMulti
           />
         </div>
       )}

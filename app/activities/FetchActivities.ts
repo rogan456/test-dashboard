@@ -27,7 +27,7 @@
 }*/}
 
 
-export async function fetchActivities() {
+export async function fetchActivities(startDate: string, endDate: string) {
   const myHeaders = new Headers();
   myHeaders.append("Content-Type", "text/plain");
 
@@ -39,7 +39,7 @@ export async function fetchActivities() {
 
   while (true) {
     const raw = `{
-      "queryName": "$/GMA/API-IMIS/Research/Internal Dashboard/GMA Activities",
+      "queryName": "$/GMA/API-IMIS/Research/Internal Dashboard/GMA Activities&Date=\\"${startDate}\\",\\"${endDate}\\"",
       "limit": ${limit},
       "offset": ${offset},
       "rt": "d49^%Ygur!7Y9BLD"

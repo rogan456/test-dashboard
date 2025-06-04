@@ -46,7 +46,7 @@ function CollapsibleRow({ row }: { row: RowData }) {
 
         <td className="p-2 break-words">{row.ActivityType}</td>
         <td className="p-2 break-words">{row.EnteredByStaffName}</td>
-        <td className="p-2 break-words">{row.CitySort}</td>
+        <td className="p-2 break-words">{row.CitySort ? row.CitySort.charAt(0).toUpperCase() + row.CitySort.slice(1).toLowerCase(): ''}</td>
       </tr>
       {open && (
         <tr className="bg-blue-50 rounded-b-lg">
@@ -58,7 +58,7 @@ function CollapsibleRow({ row }: { row: RowData }) {
                     <th className="text-left p-1 text-blue-600">Staff Involved</th>
                   </tr>
                   <tr>
-                    <td className="p-1 text-left">{row.StaffInvolved}</td>
+                    <td className="p-1 text-left">{row.StaffInvolved? row.StaffInvolved.split(',').map(s => s.trim()).join(', '): ''}</td>
                   </tr>
                   <tr>
                     <th className="text-left p-1 text-blue-600">Notes</th>
