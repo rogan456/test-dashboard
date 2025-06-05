@@ -22,11 +22,15 @@ const districtOptions = Object.entries(districtMap).map(([districtId, cityIds]) 
   cityIds,
 }));
 
-const cityOptions = Object.entries(cities).map(([id, name]) => {
-  const cityName = name as string;
+type City = { ID: string | number; CompanySort?: string };
+
+const cityOptions = (Array.isArray(cities) ? cities : Object.values(cities)).map(city => {
+  const c = city as City;
   return {
-    value: id,
-    label: cityName.charAt(0) + cityName.slice(1).toLowerCase(),
+    value: String(c.ID), // Use the string CityId
+    label: c.CompanySort
+      ? c.CompanySort.charAt(0) + c.CompanySort.slice(1).toLowerCase()
+      : '',
   };
 });
 

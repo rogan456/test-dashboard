@@ -1,538 +1,4826 @@
-{
-  "1": "ACWORTH",
-  "3": "ADAIRSVILLE",
-  "4": "ALMA",
-  "5": "ALPHARETTA",
-  "7": "AMERICUS",
-  "8": "ARAGON",
-  "9": "ASHBURN",
-  "10": "ATLANTA",
-  "11": "AUGUSTA",
-  "13": "AUSTELL",
-  "14": "AVONDALE ESTATES",
-  "15": "BAINBRIDGE",
-  "17": "BARNESVILLE",
-  "19": "BAXLEY",
-  "20": "BLACKSHEAR",
-  "21": "BLAIRSVILLE",
-  "22": "BLAKELY",
-  "25": "BOWDON",
-  "26": "BOWMAN",
-  "27": "BREMEN",
-  "28": "BROOKLET",
-  "29": "BRUNSWICK",
-  "30": "BUCHANAN",
-  "31": "BUENA VISTA",
-  "32": "BUFORD",
-  "33": "BUTLER",
-  "34": "BYRON",
-  "35": "CAIRO",
-  "36": "CAMILLA",
-  "37": "CANTON",
-  "38": "CARROLLTON",
-  "39": "CAVE SPRING",
-  "40": "CEDARTOWN",
-  "41": "CENTERVILLE",
-  "42": "CHAMBLEE",
-  "44": "CHATSWORTH",
-  "46": "CHICKAMAUGA",
-  "48": "CLARKESVILLE",
-  "49": "CLARKSTON",
-  "50": "CLAXTON",
-  "52": "CLEVELAND",
-  "53": "COCHRAN",
-  "55": "COLLEGE PARK",
-  "56": "COLQUITT",
-  "57": "COMER",
-  "58": "COMMERCE",
-  "59": "CONYERS",
-  "63": "CORDELE",
-  "65": "CORNELIA",
-  "66": "CUMMING",
-  "67": "CUSSETA-CHATTAHOOCHEE COUNTY",
-  "68": "DACULA",
-  "69": "DAHLONEGA",
-  "70": "DALLAS",
-  "71": "DARIEN",
-  "72": "DAWSON",
-  "73": "DOERUN",
-  "74": "DONALSONVILLE",
-  "75": "DORAVILLE",
-  "76": "DOUGLAS",
-  "77": "DOUGLASVILLE",
-  "79": "DUBLIN",
-  "81": "EAST ELLIJAY",
-  "82": "EAST POINT",
-  "83": "EASTMAN",
-  "84": "EATONTON",
-  "85": "ELBERTON",
-  "86": "ELLAVILLE",
-  "87": "ELLIJAY",
-  "89": "EMERSON",
-  "90": "ENIGMA",
-  "91": "FAIRBURN",
-  "92": "FAYETTEVILLE",
-  "93": "FOLKSTON",
-  "94": "FORT OGLETHORPE",
-  "95": "FORT VALLEY",
-  "97": "FRANKLIN",
-  "98": "GAINESVILLE",
-  "100": "GARDEN CITY",
-  "103": "GIBSON",
-  "104": "GLENNVILLE",
-  "105": "GORDON",
-  "106": "GRAYSON",
-  "107": "GREENSBORO",
-  "108": "GREENVILLE",
-  "109": "GROVETOWN",
-  "111": "HAHIRA",
-  "112": "HAMPTON",
-  "113": "HAPEVILLE",
-  "114": "HARLEM",
-  "115": "HARTWELL",
-  "116": "HAWKINSVILLE",
-  "119": "HAZLEHURST",
-  "121": "HEPHZIBAH",
-  "122": "HINESVILLE",
-  "123": "HIRAM",
-  "124": "HOGANSVILLE",
-  "125": "HOLLY SPRINGS",
-  "126": "JACKSON",
-  "127": "JASPER",
-  "128": "JEFFERSON",
-  "129": "JEFFERSONVILLE",
-  "130": "JESUP",
-  "132": "JONESBORO",
-  "133": "KENNESAW",
-  "134": "KINGSLAND",
-  "135": "LAFAYETTE",
-  "136": "LAGRANGE",
-  "139": "LAKE PARK",
-  "140": "LAVONIA",
-  "142": "LEESBURG",
-  "143": "LENOX",
-  "144": "LINCOLNTON",
-  "145": "LITHONIA",
-  "146": "LOCUST GROVE",
-  "147": "LOGANVILLE",
-  "148": "LOOKOUT MOUNTAIN",
-  "149": "LOUISVILLE",
-  "150": "LUMBER CITY",
-  "151": "LUMPKIN",
-  "152": "LYONS",
-  "153": "MADISON",
-  "154": "MANCHESTER",
-  "155": "MARSHALLVILLE",
-  "158": "METTER",
-  "160": "MILLEN",
-  "161": "MONROE",
-  "163": "MONTEZUMA",
-  "164": "MONTICELLO",
-  "165": "MORROW",
-  "166": "MOULTRIE",
-  "167": "MOUNT AIRY",
-  "168": "MOUNT VERNON",
-  "170": "NASHVILLE",
-  "171": "NEWNAN",
-  "173": "NEWTON",
-  "175": "NORCROSS",
-  "176": "OAKWOOD",
-  "177": "OCILLA",
-  "178": "ODUM",
-  "179": "OGLETHORPE",
-  "180": "OXFORD",
-  "181": "PALMETTO",
-  "182": "PATTERSON",
-  "183": "PEACHTREE CITY",
-  "184": "PELHAM",
-  "185": "PEMBROKE",
-  "187": "PERRY",
-  "188": "PINE LAKE",
-  "189": "PINE MOUNTAIN",
-  "190": "POOLER",
-  "191": "PORT WENTWORTH",
-  "192": "QUITMAN",
-  "193": "REIDSVILLE",
-  "194": "REYNOLDS",
-  "195": "RICHMOND HILL",
-  "196": "RINCON",
-  "197": "ROBERTA",
-  "198": "ROCHELLE",
-  "199": "ROCKMART",
-  "200": "ROME",
-  "203": "ROSSVILLE",
-  "204": "ROSWELL",
-  "206": "SANDERSVILLE",
-  "207": "SENOIA",
-  "208": "SKY VALLEY",
-  "209": "SMYRNA",
-  "211": "SNELLVILLE",
-  "212": "SOCIAL CIRCLE",
-  "213": "SOPERTON",
-  "215": "SPRINGFIELD",
-  "216": "STATESBORO",
-  "217": "STOCKBRIDGE",
-  "218": "STONE MOUNTAIN",
-  "219": "SUMMERVILLE",
-  "220": "SWAINSBORO",
-  "222": "SYLVESTER",
-  "223": "TALLAPOOSA",
-  "225": "TEMPLE",
-  "226": "TENNILLE",
-  "227": "THOMASTON",
-  "228": "THOMSON",
-  "229": "THUNDERBOLT",
-  "230": "TIFTON",
-  "231": "TOCCOA",
-  "234": "TRION",
-  "236": "TYBEE ISLAND",
-  "237": "TYRONE",
-  "238": "UNION CITY",
-  "239": "UNION POINT",
-  "240": "VALDOSTA",
-  "242": "VIDALIA",
-  "244": "VIENNA",
-  "245": "VILLA RICA",
-  "247": "WADLEY",
-  "248": "WALESKA",
-  "249": "WALTHOURVILLE",
-  "252": "WARM SPRINGS",
-  "253": "WARNER ROBINS",
-  "254": "WARRENTON",
-  "256": "WASHINGTON",
-  "258": "WAYCROSS",
-  "260": "WAYNESBORO",
-  "261": "WHITE",
-  "262": "WHITESBURG",
-  "263": "WINDER",
-  "264": "WOODBINE",
-  "265": "WOODBURY",
-  "266": "WRENS",
-  "269": "GRAY",
-  "270": "BLUE RIDGE",
-  "273": "ANDERSONVILLE",
-  "275": "BLOOMINGDALE",
-  "281": "DEMOREST",
-  "284": "EAST DUBLIN",
-  "285": "FAIRMOUNT",
-  "286": "FORT GAINES",
-  "287": "GRIFFIN",
-  "291": "GRANTVILLE",
-  "295": "HOMERVILLE",
-  "299": "LUTHERSVILLE",
-  "300": "MEIGS",
-  "301": "MILLEDGEVILLE",
-  "304": "NICHOLLS",
-  "305": "NORMAN PARK",
-  "306": "PEARSON",
-  "307": "RINGGOLD",
-  "308": "SMITHVILLE",
-  "309": "SPARTA",
-  "310": "STATHAM",
-  "311": "SUGAR HILL",
-  "312": "SUWANEE",
-  "313": "TALBOTTON",
-  "314": "TRENTON",
-  "315": "TWIN CITY",
-  "317": "WEST POINT",
-  "319": "WRIGHTSVILLE",
-  "321": "ABBEVILLE",
-  "322": "PORTAL",
-  "324": "ATTAPULGUS",
-  "330": "AUBURN",
-  "331": "RENTZ",
-  "332": "UNADILLA",
-  "333": "ADEL",
-  "334": "ADRIAN",
-  "335": "AILEY",
-  "336": "ALAMO",
-  "337": "ALAPAHA",
-  "338": "ALBANY",
-  "339": "ALDORA",
-  "340": "ALLENTOWN",
-  "341": "ALTO",
-  "342": "ARABI",
-  "343": "ARLINGTON",
-  "344": "ATHENS-CLARKE COUNTY",
-  "345": "HELEN",
-  "346": "HOMER",
-  "347": "AVERA",
-  "348": "BACONTON",
-  "349": "BALDWIN",
-  "350": "BARWICK",
-  "351": "BELLVILLE",
-  "352": "BERKELEY LAKE",
-  "353": "BERLIN",
-  "354": "BETHLEHEM",
-  "356": "BLUFFTON",
-  "357": "BLYTHE",
-  "358": "BOGART",
-  "359": "BOSTON",
-  "360": "BOSTWICK",
-  "361": "BRASELTON",
-  "362": "BRINSON",
-  "363": "BRONWOOD",
-  "364": "BROXTON",
-  "365": "BYROMVILLE",
-  "366": "CADWELL",
-  "367": "CALHOUN",
-  "368": "CAMAK",
-  "369": "CANON",
-  "370": "CARLTON",
-  "371": "CARNESVILLE",
-  "372": "CARTERSVILLE",
-  "373": "CHESTER",
-  "374": "CLAYTON",
-  "375": "CLIMAX",
-  "376": "COHUTTA",
-  "377": "COLBERT",
-  "378": "COLLINS",
-  "379": "CONCORD",
-  "380": "COOLIDGE",
-  "381": "COVINGTON",
-  "382": "CRAWFORD",
-  "383": "CRAWFORDVILLE",
-  "384": "CULLODEN",
-  "385": "CUTHBERT",
-  "386": "DALTON",
-  "387": "DAMASCUS",
-  "388": "DANIELSVILLE",
-  "389": "DAVISBORO",
-  "390": "DAWSONVILLE",
-  "391": "DECATUR",
-  "392": "DUDLEY",
-  "393": "DULUTH",
-  "394": "DUPONT",
-  "395": "EDISON",
-  "396": "ELLENTON",
-  "398": "ETON",
-  "399": "FITZGERALD",
-  "400": "FLOVILLA",
-  "401": "FOREST PARK",
-  "402": "FORSYTH",
-  "403": "GARFIELD",
-  "404": "GAY",
-  "405": "GEORGETOWN",
-  "406": "GIRARD",
-  "407": "GLENWOOD",
-  "408": "GRAHAM",
-  "409": "GUYTON",
-  "410": "HAGAN",
-  "411": "HAMILTON",
-  "412": "HARRISON",
-  "413": "HIAWASSEE",
-  "414": "HIGGSTON",
-  "415": "HOBOKEN",
-  "416": "HOMELAND",
-  "417": "HOSCHTON",
-  "418": "HULL",
-  "419": "IDEAL",
-  "420": "ILA",
-  "421": "IRON CITY",
-  "422": "IRWINTON",
-  "423": "IVEY",
-  "424": "JENKINSBURG",
-  "425": "JUNCTION CITY",
-  "426": "KEYSVILLE",
-  "427": "KINGSTON",
-  "428": "KITE",
-  "429": "LAKE CITY",
-  "430": "LAKELAND",
-  "431": "LAWRENCEVILLE",
-  "432": "LEXINGTON",
-  "433": "LILBURN",
-  "434": "LULA",
-  "435": "LYERLY",
-  "436": "MACON-Bibb",
-  "437": "MANSFIELD",
-  "438": "MARIETTA",
-  "439": "MARTIN",
-  "440": "MCCAYSVILLE",
-  "441": "MCDONOUGH",
-  "442": "MCINTYRE",
-  "443": "MEANSVILLE",
-  "444": "MENLO",
-  "445": "MIDVILLE",
-  "446": "MIDWAY",
-  "447": "MILAN",
-  "448": "MILNER",
-  "449": "MONTROSE",
-  "450": "MORELAND",
-  "451": "MORGAN",
-  "452": "MORVEN",
-  "453": "MOUNTAIN PARK",
-  "454": "MOUNT ZION",
-  "455": "NAHUNTA",
-  "456": "NELSON",
-  "457": "NEWBORN",
-  "458": "NEWINGTON",
-  "459": "NICHOLSON",
-  "460": "NORWOOD",
-  "461": "OCHLOCKNEE",
-  "462": "OCONEE",
-  "463": "OLIVER",
-  "464": "OMEGA",
-  "465": "ORCHARD HILL",
-  "466": "PARROTT",
-  "467": "PAVO",
-  "468": "PENDERGRASS",
-  "469": "PINEHURST",
-  "470": "PLAINS",
-  "471": "PLAINVILLE",
-  "472": "PORTERDALE",
-  "473": "POULAN",
-  "474": "POWDER SPRINGS",
-  "476": "RAY CITY",
-  "477": "REBECCA",
-  "478": "REGISTER",
-  "479": "REMERTON",
-  "480": "RICEBORO",
-  "481": "RICHLAND",
-  "482": "RIVERDALE",
-  "483": "ROYSTON",
-  "484": "RUTLEDGE",
-  "485": "ST. MARYS",
-  "486": "SALE CITY",
-  "487": "SARDIS",
-  "488": "SASSER",
-  "489": "SAVANNAH",
-  "490": "SCOTLAND",
-  "491": "SCREVEN",
-  "492": "SHARON",
-  "493": "SHELLMAN",
-  "494": "SHILOH",
-  "495": "SILOAM",
-  "496": "SPARKS",
-  "497": "STAPLETON",
-  "498": "STILLMORE",
-  "499": "SUMNER",
-  "500": "SURRENCY",
-  "501": "SYCAMORE",
-  "502": "SYLVANIA",
-  "503": "TALLULAH FALLS",
-  "504": "THOMASVILLE",
-  "505": "TIGNALL",
-  "506": "TOOMSBORO",
-  "507": "TUNNEL HILL",
-  "508": "TURIN",
-  "509": "TY TY",
-  "510": "VARNELL",
-  "511": "WALNUT GROVE",
-  "512": "WARWICK",
-  "513": "WATKINSVILLE",
-  "514": "WAVERLY HALL",
-  "515": "WHIGHAM",
-  "516": "WHITE PLAINS",
-  "517": "WILLACOOCHEE",
-  "518": "WILLIAMSON",
-  "519": "WINTERVILLE",
-  "520": "WOODLAND",
-  "521": "WOODSTOCK",
-  "522": "WOODVILLE",
-  "523": "YOUNG HARRIS",
-  "524": "ZEBULON",
-  "525": "BROOKS",
-  "526": "FLOWERY BRANCH",
-  "528": "LESLIE",
-  "529": "MOLENA",
-  "530": "PINEVIEW",
-  "531": "UVALDA",
-  "532": "COLUMBUS CONSOLIDATED GOVERNME",
-  "533": "EPHESUS",
-  "534": "FRANKLIN SPRINGS",
-  "535": "BALL GROUND",
-  "536": "ARNOLDSVILLE",
-  "537": "NORTH HIGH SHOALS",
-  "539": "DILLARD",
-  "540": "GENEVA",
-  "541": "JAKIN",
-  "542": "DASHER",
-  "543": "ARCADE",
-  "544": "WOOLSEY",
-  "545": "BARTOW",
-  "546": "MITCHELL",
-  "547": "COBBTOWN",
-  "548": "CLERMONT",
-  "549": "MAXEYS",
-  "551": "DANVILLE",
-  "553": "CENTRALHATCHEE",
-  "554": "RHINE",
-  "555": "TALKING ROCK",
-  "556": "MOUNTAIN CITY",
-  "557": "MORGANTON",
-  "560": "ARGYLE",
-  "561": "SHARPSBURG",
-  "562": "OFFERMAN",
-  "563": "CARL",
-  "564": "PULASKI",
-  "565": "FLEMINGTON",
-  "568": "SHADY DALE",
-  "569": "YATESVILLE",
-  "570": "LEARY",
-  "571": "MAYSVILLE",
-  "572": "RESACA",
-  "2040": "EUHARLEE",
-  "2041": "FARGO",
-  "2063": "LUDOWICI",
-  "2098": "HILTONIA",
-  "61740": "TALMO",
-  "61873": "ALLENHURST",
-  "61999": "WACO",
-  "62718": "AMBROSE",
-  "62771": "TIGER",
-  "62791": "BISHOP",
-  "62803": "ALSTON",
-  "62807": "ROCKY FORD",
-  "62827": "AVALON",
-  "62828": "BETWEEN",
-  "62829": "BOWERSVILLE",
-  "62830": "BRASWELL",
-  "62831": "BUCKHEAD",
-  "62832": "CECIL",
-  "62833": "CHAUNCEY",
-  "62835": "DAISY",
-  "62836": "DEARING",
-  "62837": "DENTON",
-  "62838": "DEEPSTEP",
-  "62839": "DESOTO",
-  "62840": "DEXTER",
-  "62846": "FUNSTON",
-  "62847": "GILLSVILLE",
-  "62848": "GOOD HOPE",
-  "62849": "GUM BRANCH",
-  "62861": "EDGEHILL",
-  "63241": "JERSEY",
-  "63243": "REST HAVEN",
-  "63245": "TARRYTOWN",
-  "63247": "TAYLORSVILLE",
-  "63249": "LILLY",
-  "63251": "NUNEZ",
-  "63255": "RAYLE",
-  "63260": "PITTS",
-  "63262": "DOOLING",
-  "63263": "JACKSONVILLE",
-  "63264": "LOVEJOY",
-  "63266": "RIDDLEVILLE",
-  "63268": "SANTA CLAUS",
-  "63270": "SUMMERTOWN",
-  "63274": "HARALSON",
-  "63275": "MANASSAS",
-  "63277": "OAK PARK",
-  "63280": "ROOPVILLE",
-  "63281": "VERNONBURG",
-  "63282": "VIDETTE",
-  "63283": "LONE OAK",
-  "77685": "SANDY SPRINGS",
-  "79516": "MILTON",
-  "79799": "JOHNS CREEK",
-  "80985": "CHATTAHOOCHEE HILLS",
-  "83546": "DUNWOODY",
-  "92615": "PEACHTREE CORNERS",
-  "93412": "BROOKHAVEN",
-  "97786": "MCRAE-HELENA",
-  "99965": "TUCKER",
-  "102343": "STONECREST",
-  "102350": "SOUTH FULTON",
-  "121347": "MABLETON",
-  "131806": "MULBERRY"
-}
+[
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "321",
+    "Company": "City of Abbeville",
+    "CompanySort": "ABBEVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "31.9925",
+    "LONGITUDE": "-83.3068"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "1",
+    "Company": "City of Acworth",
+    "CompanySort": "ACWORTH",
+    "GMADIST": 3,
+    "LATITUDE": "34.0564",
+    "LONGITUDE": "-84.6689"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "3",
+    "Company": "City of Adairsville",
+    "CompanySort": "ADAIRSVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.3702",
+    "LONGITUDE": "-84.9215"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "333",
+    "Company": "City of Adel",
+    "CompanySort": "ADEL",
+    "GMADIST": 11,
+    "LATITUDE": "31.1316",
+    "LONGITUDE": "-83.425"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "334",
+    "Company": "City of Adrian",
+    "CompanySort": "ADRIAN",
+    "GMADIST": 9,
+    "LATITUDE": "32.5306",
+    "LONGITUDE": "-82.592"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "335",
+    "Company": "City of Ailey",
+    "CompanySort": "AILEY",
+    "GMADIST": 9,
+    "LATITUDE": "32.1882",
+    "LONGITUDE": "-82.5698"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "336",
+    "Company": "City of Alamo",
+    "CompanySort": "ALAMO",
+    "GMADIST": 9,
+    "LATITUDE": "32.1469",
+    "LONGITUDE": "-82.7798"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "337",
+    "Company": "City of Alapaha",
+    "CompanySort": "ALAPAHA",
+    "GMADIST": 11,
+    "LATITUDE": "31.3831",
+    "LONGITUDE": "-83.2237"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "338",
+    "Company": "City of Albany",
+    "CompanySort": "ALBANY",
+    "GMADIST": 10,
+    "LATITUDE": "31.5776",
+    "LONGITUDE": "-84.1763"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "339",
+    "Company": "Town of Aldora",
+    "CompanySort": "ALDORA",
+    "GMADIST": 4,
+    "LATITUDE": "33.0509",
+    "LONGITUDE": "-84.176"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "61873",
+    "Company": "Town of Allenhurst",
+    "CompanySort": "ALLENHURST",
+    "GMADIST": 12,
+    "LATITUDE": "31.784",
+    "LONGITUDE": "-81.6077"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "340",
+    "Company": "City of Allentown",
+    "CompanySort": "ALLENTOWN",
+    "GMADIST": 6,
+    "LATITUDE": "32.5927",
+    "LONGITUDE": "-83.2258"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "4",
+    "Company": "City of Alma",
+    "CompanySort": "ALMA",
+    "GMADIST": 11,
+    "LATITUDE": "31.5432",
+    "LONGITUDE": "-82.4745"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "5",
+    "Company": "City of Alpharetta",
+    "CompanySort": "ALPHARETTA",
+    "GMADIST": 3,
+    "LATITUDE": "34.0704",
+    "LONGITUDE": "-84.2738"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62803",
+    "Company": "Town of Alston",
+    "CompanySort": "ALSTON",
+    "GMADIST": 9,
+    "LATITUDE": "32.081",
+    "LONGITUDE": "-82.4789"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "341",
+    "Company": "Town of Alto",
+    "CompanySort": "ALTO",
+    "GMADIST": 2,
+    "LATITUDE": "34.4652",
+    "LONGITUDE": "-83.5728"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62718",
+    "Company": "City of Ambrose",
+    "CompanySort": "AMBROSE",
+    "GMADIST": 11,
+    "LATITUDE": "31.5944",
+    "LONGITUDE": "-83.0137"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "7",
+    "Company": "City of Americus",
+    "CompanySort": "AMERICUS",
+    "GMADIST": 8,
+    "LATITUDE": "32.0735",
+    "LONGITUDE": "-84.2248"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "273",
+    "Company": "City of Andersonville",
+    "CompanySort": "ANDERSONVILLE",
+    "GMADIST": 8,
+    "LATITUDE": "32.1966",
+    "LONGITUDE": "-84.1455"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "342",
+    "Company": "Town of Arabi",
+    "CompanySort": "ARABI",
+    "GMADIST": 8,
+    "LATITUDE": "31.8282",
+    "LONGITUDE": "-83.7302"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "8",
+    "Company": "City of Aragon",
+    "CompanySort": "ARAGON",
+    "GMADIST": 1,
+    "LATITUDE": "34.0457",
+    "LONGITUDE": "-85.0571"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "543",
+    "Company": "City of Arcade",
+    "CompanySort": "ARCADE",
+    "GMADIST": 5,
+    "LATITUDE": "34.069",
+    "LONGITUDE": "-83.54"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "560",
+    "Company": "Town of Argyle",
+    "CompanySort": "ARGYLE",
+    "GMADIST": 11,
+    "LATITUDE": "31.0732",
+    "LONGITUDE": "-82.6489"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "343",
+    "Company": "City of Arlington",
+    "CompanySort": "ARLINGTON",
+    "GMADIST": 10,
+    "LATITUDE": "31.4383",
+    "LONGITUDE": "-84.7253"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "536",
+    "Company": "City of Arnoldsville",
+    "CompanySort": "ARNOLDSVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.9103",
+    "LONGITUDE": "-83.2181"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "9",
+    "Company": "City of Ashburn",
+    "CompanySort": "ASHBURN",
+    "GMADIST": 11,
+    "LATITUDE": "31.7096",
+    "LONGITUDE": "-83.6528"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "344",
+    "Company": "Athens-Clarke County",
+    "CompanySort": "ATHENS-CLARKE COUNTY",
+    "GMADIST": 5,
+    "LATITUDE": "33.9508",
+    "LONGITUDE": "-83.3689"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "10",
+    "Company": "City of Atlanta",
+    "CompanySort": "ATLANTA",
+    "GMADIST": 3,
+    "LATITUDE": "33.7626",
+    "LONGITUDE": "-84.4228"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "324",
+    "Company": "City of Attapulgus",
+    "CompanySort": "ATTAPULGUS",
+    "GMADIST": 10,
+    "LATITUDE": "30.7495",
+    "LONGITUDE": "-84.4839"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "330",
+    "Company": "City of Auburn",
+    "CompanySort": "AUBURN",
+    "GMADIST": 5,
+    "LATITUDE": "34.0151",
+    "LONGITUDE": "-83.8316"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "11",
+    "Company": "Augusta",
+    "CompanySort": "AUGUSTA",
+    "GMADIST": 7,
+    "LATITUDE": "33.3645",
+    "LONGITUDE": "-82.0708"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "13",
+    "Company": "City of Austell",
+    "CompanySort": "AUSTELL",
+    "GMADIST": 3,
+    "LATITUDE": "33.8202",
+    "LONGITUDE": "-84.6452"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62827",
+    "Company": "City of Avalon",
+    "CompanySort": "AVALON",
+    "GMADIST": 2,
+    "LATITUDE": "34.5027",
+    "LONGITUDE": "-83.1967"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "347",
+    "Company": "City of Avera",
+    "CompanySort": "AVERA",
+    "GMADIST": 7,
+    "LATITUDE": "33.1934",
+    "LONGITUDE": "-82.5287"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "14",
+    "Company": "City of Avondale Estates",
+    "CompanySort": "AVONDALE ESTATES",
+    "GMADIST": 3,
+    "LATITUDE": "33.7699",
+    "LONGITUDE": "-84.2648"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "348",
+    "Company": "City of Baconton",
+    "CompanySort": "BACONTON",
+    "GMADIST": 10,
+    "LATITUDE": "31.3804",
+    "LONGITUDE": "-84.1592"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "15",
+    "Company": "City of Bainbridge",
+    "CompanySort": "BAINBRIDGE",
+    "GMADIST": 10,
+    "LATITUDE": "30.9045",
+    "LONGITUDE": "-84.5722"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "349",
+    "Company": "City of Baldwin",
+    "CompanySort": "BALDWIN",
+    "GMADIST": 2,
+    "LATITUDE": "34.4864",
+    "LONGITUDE": "-83.5493"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "535",
+    "Company": "City of Ball Ground",
+    "CompanySort": "BALL GROUND",
+    "GMADIST": 3,
+    "LATITUDE": "34.3418",
+    "LONGITUDE": "-84.3624"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "17",
+    "Company": "City of Barnesville",
+    "CompanySort": "BARNESVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.0511",
+    "LONGITUDE": "-84.1526"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "545",
+    "Company": "Town of Bartow",
+    "CompanySort": "BARTOW",
+    "GMADIST": 7,
+    "LATITUDE": "32.8816",
+    "LONGITUDE": "-82.4712"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "350",
+    "Company": "City of Barwick",
+    "CompanySort": "BARWICK",
+    "GMADIST": 11,
+    "LATITUDE": "30.8933",
+    "LONGITUDE": "-83.7391"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "19",
+    "Company": "City of Baxley",
+    "CompanySort": "BAXLEY",
+    "GMADIST": 9,
+    "LATITUDE": "31.7643",
+    "LONGITUDE": "-82.3507"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "351",
+    "Company": "City of Bellville",
+    "CompanySort": "BELLVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "32.1526",
+    "LONGITUDE": "-81.9744"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "352",
+    "Company": "City of Berkeley Lake",
+    "CompanySort": "BERKELEY LAKE",
+    "GMADIST": 3,
+    "LATITUDE": "33.9805",
+    "LONGITUDE": "-84.1839"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "353",
+    "Company": "City of Berlin",
+    "CompanySort": "BERLIN",
+    "GMADIST": 10,
+    "LATITUDE": "31.0681",
+    "LONGITUDE": "-83.6233"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "354",
+    "Company": "Town of Bethlehem",
+    "CompanySort": "BETHLEHEM",
+    "GMADIST": 5,
+    "LATITUDE": "33.937",
+    "LONGITUDE": "-83.7098"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62828",
+    "Company": "City of Between",
+    "CompanySort": "BETWEEN",
+    "GMADIST": 5,
+    "LATITUDE": "33.8178",
+    "LONGITUDE": "-83.8043"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62791",
+    "Company": "Town of Bishop",
+    "CompanySort": "BISHOP",
+    "GMADIST": 5,
+    "LATITUDE": "33.8171",
+    "LONGITUDE": "-83.4372"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "20",
+    "Company": "City of Blackshear",
+    "CompanySort": "BLACKSHEAR",
+    "GMADIST": 11,
+    "LATITUDE": "31.299",
+    "LONGITUDE": "-82.2429"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "21",
+    "Company": "City of Blairsville",
+    "CompanySort": "BLAIRSVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.8761",
+    "LONGITUDE": "-83.9548"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "22",
+    "Company": "City of Blakely",
+    "CompanySort": "BLAKELY",
+    "GMADIST": 10,
+    "LATITUDE": "31.3827",
+    "LONGITUDE": "-84.9227"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "275",
+    "Company": "City of Bloomingdale",
+    "CompanySort": "BLOOMINGDALE",
+    "GMADIST": 12,
+    "LATITUDE": "32.125",
+    "LONGITUDE": "-81.3077"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "270",
+    "Company": "City of Blue Ridge",
+    "CompanySort": "BLUE RIDGE",
+    "GMADIST": 1,
+    "LATITUDE": "34.8664",
+    "LONGITUDE": "-84.3218"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "356",
+    "Company": "Town of Bluffton",
+    "CompanySort": "BLUFFTON",
+    "GMADIST": 8,
+    "LATITUDE": "31.5198",
+    "LONGITUDE": "-84.8691"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "357",
+    "Company": "City of Blythe",
+    "CompanySort": "BLYTHE",
+    "GMADIST": 7,
+    "LATITUDE": "33.3011",
+    "LONGITUDE": "-82.2027"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "358",
+    "Company": "Town of Bogart",
+    "CompanySort": "BOGART",
+    "GMADIST": 5,
+    "LATITUDE": "33.9474",
+    "LONGITUDE": "-83.5335"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "359",
+    "Company": "City of Boston",
+    "CompanySort": "BOSTON",
+    "GMADIST": 10,
+    "LATITUDE": "30.792",
+    "LONGITUDE": "-83.7899"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "360",
+    "Company": "City of Bostwick",
+    "CompanySort": "BOSTWICK",
+    "GMADIST": 5,
+    "LATITUDE": "33.7378",
+    "LONGITUDE": "-83.515"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "25",
+    "Company": "City of Bowdon",
+    "CompanySort": "BOWDON",
+    "GMADIST": 4,
+    "LATITUDE": "33.5378",
+    "LONGITUDE": "-85.254"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62829",
+    "Company": "Town of Bowersville",
+    "CompanySort": "BOWERSVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.3727",
+    "LONGITUDE": "-83.0831"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "26",
+    "Company": "City of Bowman",
+    "CompanySort": "BOWMAN",
+    "GMADIST": 5,
+    "LATITUDE": "34.2051",
+    "LONGITUDE": "-83.0309"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "361",
+    "Company": "Town of Braselton",
+    "CompanySort": "BRASELTON",
+    "GMADIST": 5,
+    "LATITUDE": "34.1086",
+    "LONGITUDE": "-83.8126"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62830",
+    "Company": "City of Braswell",
+    "CompanySort": "BRASWELL",
+    "GMADIST": 1,
+    "LATITUDE": "33.9836",
+    "LONGITUDE": "-84.959"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "27",
+    "Company": "City of Bremen",
+    "CompanySort": "BREMEN",
+    "GMADIST": 1,
+    "LATITUDE": "33.709",
+    "LONGITUDE": "-85.1493"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "362",
+    "Company": "Town of Brinson",
+    "CompanySort": "BRINSON",
+    "GMADIST": 10,
+    "LATITUDE": "30.9784",
+    "LONGITUDE": "-84.7379"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "363",
+    "Company": "City of Bronwood",
+    "CompanySort": "BRONWOOD",
+    "GMADIST": 10,
+    "LATITUDE": "31.8305",
+    "LONGITUDE": "-84.3643"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "93412",
+    "Company": "City of Brookhaven",
+    "CompanySort": "BROOKHAVEN",
+    "GMADIST": 3,
+    "LATITUDE": "33.8746",
+    "LONGITUDE": "-84.3315"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "28",
+    "Company": "Town of Brooklet",
+    "CompanySort": "BROOKLET",
+    "GMADIST": 12,
+    "LATITUDE": "32.3897",
+    "LONGITUDE": "-81.6668"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "525",
+    "Company": "Town of Brooks",
+    "CompanySort": "BROOKS",
+    "GMADIST": 3,
+    "LATITUDE": "33.2925",
+    "LONGITUDE": "-84.4588"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "364",
+    "Company": "City of Broxton",
+    "CompanySort": "BROXTON",
+    "GMADIST": 11,
+    "LATITUDE": "31.6248",
+    "LONGITUDE": "-82.8877"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "29",
+    "Company": "City of Brunswick",
+    "CompanySort": "BRUNSWICK",
+    "GMADIST": 12,
+    "LATITUDE": "31.145",
+    "LONGITUDE": "-81.474"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "30",
+    "Company": "City of Buchanan",
+    "CompanySort": "BUCHANAN",
+    "GMADIST": 1,
+    "LATITUDE": "33.8031",
+    "LONGITUDE": "-85.1803"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62831",
+    "Company": "Town of Buckhead",
+    "CompanySort": "BUCKHEAD",
+    "GMADIST": 5,
+    "LATITUDE": "33.5685",
+    "LONGITUDE": "-83.3623"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "31",
+    "Company": "City of Buena Vista",
+    "CompanySort": "BUENA VISTA",
+    "GMADIST": 8,
+    "LATITUDE": "32.3188",
+    "LONGITUDE": "-84.5177"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "32",
+    "Company": "City of Buford",
+    "CompanySort": "BUFORD",
+    "GMADIST": 3,
+    "LATITUDE": "34.1184",
+    "LONGITUDE": "-83.9919"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "33",
+    "Company": "City of Butler",
+    "CompanySort": "BUTLER",
+    "GMADIST": 8,
+    "LATITUDE": "32.557",
+    "LONGITUDE": "-84.2377"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "365",
+    "Company": "Town of Byromville",
+    "CompanySort": "BYROMVILLE",
+    "GMADIST": 8,
+    "LATITUDE": "32.2016",
+    "LONGITUDE": "-83.9072"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "34",
+    "Company": "City of Byron",
+    "CompanySort": "BYRON",
+    "GMADIST": 6,
+    "LATITUDE": "32.6475",
+    "LONGITUDE": "-83.754"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "366",
+    "Company": "Town of Cadwell",
+    "CompanySort": "CADWELL",
+    "GMADIST": 9,
+    "LATITUDE": "32.3396",
+    "LONGITUDE": "-83.042"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "35",
+    "Company": "City of Cairo",
+    "CompanySort": "CAIRO",
+    "GMADIST": 10,
+    "LATITUDE": "30.879",
+    "LONGITUDE": "-84.2051"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "367",
+    "Company": "City of Calhoun",
+    "CompanySort": "CALHOUN",
+    "GMADIST": 1,
+    "LATITUDE": "34.4996",
+    "LONGITUDE": "-84.9427"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "368",
+    "Company": "Town of Camak",
+    "CompanySort": "CAMAK",
+    "GMADIST": 7,
+    "LATITUDE": "33.4526",
+    "LONGITUDE": "-82.6463"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "36",
+    "Company": "City of Camilla",
+    "CompanySort": "CAMILLA",
+    "GMADIST": 10,
+    "LATITUDE": "31.2337",
+    "LONGITUDE": "-84.2088"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "369",
+    "Company": "City of Canon",
+    "CompanySort": "CANON",
+    "GMADIST": 2,
+    "LATITUDE": "34.3455",
+    "LONGITUDE": "-83.1107"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "37",
+    "Company": "City of Canton",
+    "CompanySort": "CANTON",
+    "GMADIST": 3,
+    "LATITUDE": "34.2469",
+    "LONGITUDE": "-84.4902"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "563",
+    "Company": "Town of Carl",
+    "CompanySort": "CARL",
+    "GMADIST": 5,
+    "LATITUDE": "34.0045",
+    "LONGITUDE": "-83.8127"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "370",
+    "Company": "City of Carlton",
+    "CompanySort": "CARLTON",
+    "GMADIST": 5,
+    "LATITUDE": "34.0427",
+    "LONGITUDE": "-83.0385"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "371",
+    "Company": "City of Carnesville",
+    "CompanySort": "CARNESVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.372",
+    "LONGITUDE": "-83.2344"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "38",
+    "Company": "City of Carrollton",
+    "CompanySort": "CARROLLTON",
+    "GMADIST": 4,
+    "LATITUDE": "33.5818",
+    "LONGITUDE": "-85.0837"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "372",
+    "Company": "City of Cartersville",
+    "CompanySort": "CARTERSVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.1632",
+    "LONGITUDE": "-84.8007"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "39",
+    "Company": "City of Cave Spring",
+    "CompanySort": "CAVE SPRING",
+    "GMADIST": 1,
+    "LATITUDE": "34.1065",
+    "LONGITUDE": "-85.339"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62832",
+    "Company": "City of Cecil",
+    "CompanySort": "CECIL",
+    "GMADIST": 11,
+    "LATITUDE": "31.0466",
+    "LONGITUDE": "-83.3907"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "40",
+    "Company": "City of Cedartown",
+    "CompanySort": "CEDARTOWN",
+    "GMADIST": 1,
+    "LATITUDE": "34.0215",
+    "LONGITUDE": "-85.2494"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "41",
+    "Company": "City of Centerville",
+    "CompanySort": "CENTERVILLE",
+    "GMADIST": 6,
+    "LATITUDE": "32.6341",
+    "LONGITUDE": "-83.6854"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "553",
+    "Company": "Town of Centralhatchee",
+    "CompanySort": "CENTRALHATCHEE",
+    "GMADIST": 4,
+    "LATITUDE": "33.3689",
+    "LONGITUDE": "-85.1037"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "42",
+    "Company": "City of Chamblee",
+    "CompanySort": "CHAMBLEE",
+    "GMADIST": 3,
+    "LATITUDE": "33.8843",
+    "LONGITUDE": "-84.3008"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "44",
+    "Company": "City of Chatsworth",
+    "CompanySort": "CHATSWORTH",
+    "GMADIST": 1,
+    "LATITUDE": "34.7807",
+    "LONGITUDE": "-84.7834"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "80985",
+    "Company": "City of Chattahoochee Hills",
+    "CompanySort": "CHATTAHOOCHEE HILLS",
+    "GMADIST": 3,
+    "LATITUDE": "33.5605",
+    "LONGITUDE": "-84.7512"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62833",
+    "Company": "City of Chauncey",
+    "CompanySort": "CHAUNCEY",
+    "GMADIST": 9,
+    "LATITUDE": "32.1059",
+    "LONGITUDE": "-83.0646"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "373",
+    "Company": "Town of Chester",
+    "CompanySort": "CHESTER",
+    "GMADIST": 9,
+    "LATITUDE": "32.3945",
+    "LONGITUDE": "-83.1551"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "46",
+    "Company": "City of Chickamauga",
+    "CompanySort": "CHICKAMAUGA",
+    "GMADIST": 1,
+    "LATITUDE": "34.8744",
+    "LONGITUDE": "-85.289"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "48",
+    "Company": "City of Clarkesville",
+    "CompanySort": "CLARKESVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.6102",
+    "LONGITUDE": "-83.5284"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "49",
+    "Company": "City of Clarkston",
+    "CompanySort": "CLARKSTON",
+    "GMADIST": 3,
+    "LATITUDE": "33.8116",
+    "LONGITUDE": "-84.2406"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "50",
+    "Company": "City of Claxton",
+    "CompanySort": "CLAXTON",
+    "GMADIST": 9,
+    "LATITUDE": "32.1613",
+    "LONGITUDE": "-81.9094"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "374",
+    "Company": "City of Clayton",
+    "CompanySort": "CLAYTON",
+    "GMADIST": 2,
+    "LATITUDE": "34.8774",
+    "LONGITUDE": "-83.4019"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "548",
+    "Company": "Town of Clermont",
+    "CompanySort": "CLERMONT",
+    "GMADIST": 2,
+    "LATITUDE": "34.4781",
+    "LONGITUDE": "-83.773"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "52",
+    "Company": "City of Cleveland",
+    "CompanySort": "CLEVELAND",
+    "GMADIST": 2,
+    "LATITUDE": "34.5972",
+    "LONGITUDE": "-83.7622"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "375",
+    "Company": "City of Climax",
+    "CompanySort": "CLIMAX",
+    "GMADIST": 10,
+    "LATITUDE": "30.8756",
+    "LONGITUDE": "-84.4312"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "547",
+    "Company": "City of Cobbtown",
+    "CompanySort": "COBBTOWN",
+    "GMADIST": 9,
+    "LATITUDE": "32.2806",
+    "LONGITUDE": "-82.1388"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "53",
+    "Company": "City of Cochran",
+    "CompanySort": "COCHRAN",
+    "GMADIST": 9,
+    "LATITUDE": "32.3875",
+    "LONGITUDE": "-83.3524"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "376",
+    "Company": "Town of Cohutta",
+    "CompanySort": "COHUTTA",
+    "GMADIST": 1,
+    "LATITUDE": "34.9539",
+    "LONGITUDE": "-84.9594"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "377",
+    "Company": "City of Colbert",
+    "CompanySort": "COLBERT",
+    "GMADIST": 5,
+    "LATITUDE": "34.037",
+    "LONGITUDE": "-83.2138"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "55",
+    "Company": "City of College Park",
+    "CompanySort": "COLLEGE PARK",
+    "GMADIST": 3,
+    "LATITUDE": "33.637",
+    "LONGITUDE": "-84.4628"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "378",
+    "Company": "City of Collins",
+    "CompanySort": "COLLINS",
+    "GMADIST": 9,
+    "LATITUDE": "32.1794",
+    "LONGITUDE": "-82.1103"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "56",
+    "Company": "City of Colquitt",
+    "CompanySort": "COLQUITT",
+    "GMADIST": 10,
+    "LATITUDE": "31.1741",
+    "LONGITUDE": "-84.7319"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "532",
+    "Company": "Columbus Consolidated Government",
+    "CompanySort": "COLUMBUS CONSOLIDATED GOVERNME",
+    "GMADIST": 8,
+    "LATITUDE": "32.51",
+    "LONGITUDE": "-84.877"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "57",
+    "Company": "City of Comer",
+    "CompanySort": "COMER",
+    "GMADIST": 5,
+    "LATITUDE": "34.0625",
+    "LONGITUDE": "-83.1263"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "58",
+    "Company": "City of Commerce",
+    "CompanySort": "COMMERCE",
+    "GMADIST": 5,
+    "LATITUDE": "34.2131",
+    "LONGITUDE": "-83.4731"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "379",
+    "Company": "City of Concord",
+    "CompanySort": "CONCORD",
+    "GMADIST": 4,
+    "LATITUDE": "33.0918",
+    "LONGITUDE": "-84.4384"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "59",
+    "Company": "City of Conyers",
+    "CompanySort": "CONYERS",
+    "GMADIST": 3,
+    "LATITUDE": "33.6616",
+    "LONGITUDE": "-84.009"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "380",
+    "Company": "City of Coolidge",
+    "CompanySort": "COOLIDGE",
+    "GMADIST": 10,
+    "LATITUDE": "31.0113",
+    "LONGITUDE": "-83.8661"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63",
+    "Company": "City of Cordele",
+    "CompanySort": "CORDELE",
+    "GMADIST": 8,
+    "LATITUDE": "31.9563",
+    "LONGITUDE": "-83.7694"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "65",
+    "Company": "City of Cornelia",
+    "CompanySort": "CORNELIA",
+    "GMADIST": 2,
+    "LATITUDE": "34.5164",
+    "LONGITUDE": "-83.5309"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "381",
+    "Company": "City of Covington",
+    "CompanySort": "COVINGTON",
+    "GMADIST": 5,
+    "LATITUDE": "33.6049",
+    "LONGITUDE": "-83.8466"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "382",
+    "Company": "City of Crawford",
+    "CompanySort": "CRAWFORD",
+    "GMADIST": 5,
+    "LATITUDE": "33.883",
+    "LONGITUDE": "-83.1552"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "383",
+    "Company": "City of Crawfordville",
+    "CompanySort": "CRAWFORDVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "33.5545",
+    "LONGITUDE": "-82.8965"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "384",
+    "Company": "City of Culloden",
+    "CompanySort": "CULLODEN",
+    "GMADIST": 6,
+    "LATITUDE": "32.8632",
+    "LONGITUDE": "-84.094"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "66",
+    "Company": "City of Cumming",
+    "CompanySort": "CUMMING",
+    "GMADIST": 2,
+    "LATITUDE": "34.2066",
+    "LONGITUDE": "-84.1337"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "67",
+    "Company": "Cusseta-Chattahoochee County",
+    "CompanySort": "CUSSETA-CHATTAHOOCHEE COUNTY",
+    "GMADIST": 8,
+    "LATITUDE": "32.347",
+    "LONGITUDE": "-84.787"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "385",
+    "Company": "City of Cuthbert",
+    "CompanySort": "CUTHBERT",
+    "GMADIST": 8,
+    "LATITUDE": "31.7713",
+    "LONGITUDE": "-84.794"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "68",
+    "Company": "City of Dacula",
+    "CompanySort": "DACULA",
+    "GMADIST": 3,
+    "LATITUDE": "33.9813",
+    "LONGITUDE": "-83.8946"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "69",
+    "Company": "City of Dahlonega",
+    "CompanySort": "DAHLONEGA",
+    "GMADIST": 2,
+    "LATITUDE": "34.5303",
+    "LONGITUDE": "-83.9796"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62835",
+    "Company": "City of Daisy",
+    "CompanySort": "DAISY",
+    "GMADIST": 9,
+    "LATITUDE": "32.151",
+    "LONGITUDE": "-81.8362"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "70",
+    "Company": "City of Dallas",
+    "CompanySort": "DALLAS",
+    "GMADIST": 1,
+    "LATITUDE": "33.9153",
+    "LONGITUDE": "-84.8415"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "386",
+    "Company": "City of Dalton",
+    "CompanySort": "DALTON",
+    "GMADIST": 1,
+    "LATITUDE": "34.7689",
+    "LONGITUDE": "-84.9711"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "387",
+    "Company": "City of Damascus",
+    "CompanySort": "DAMASCUS",
+    "GMADIST": 10,
+    "LATITUDE": "31.2989",
+    "LONGITUDE": "-84.717"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "388",
+    "Company": "City of Danielsville",
+    "CompanySort": "DANIELSVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "34.1237",
+    "LONGITUDE": "-83.2201"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "551",
+    "Company": "Town of Danville",
+    "CompanySort": "DANVILLE",
+    "GMADIST": 6,
+    "LATITUDE": "32.606",
+    "LONGITUDE": "-83.2461"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "71",
+    "Company": "City of Darien",
+    "CompanySort": "DARIEN",
+    "GMADIST": 12,
+    "LATITUDE": "31.3568",
+    "LONGITUDE": "-81.4314"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "542",
+    "Company": "City of Dasher",
+    "CompanySort": "DASHER",
+    "GMADIST": 11,
+    "LATITUDE": "30.7462",
+    "LONGITUDE": "-83.2254"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "389",
+    "Company": "City of Davisboro",
+    "CompanySort": "DAVISBORO",
+    "GMADIST": 7,
+    "LATITUDE": "32.9825",
+    "LONGITUDE": "-82.6033"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "72",
+    "Company": "City of Dawson",
+    "CompanySort": "DAWSON",
+    "GMADIST": 10,
+    "LATITUDE": "31.7721",
+    "LONGITUDE": "-84.4437"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "390",
+    "Company": "City of Dawsonville",
+    "CompanySort": "DAWSONVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.4193",
+    "LONGITUDE": "-84.1198"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62836",
+    "Company": "Town of Dearing",
+    "CompanySort": "DEARING",
+    "GMADIST": 7,
+    "LATITUDE": "33.4149",
+    "LONGITUDE": "-82.3852"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "391",
+    "Company": "City of Decatur",
+    "CompanySort": "DECATUR",
+    "GMADIST": 3,
+    "LATITUDE": "33.7711",
+    "LONGITUDE": "-84.2968"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62838",
+    "Company": "Town of Deepstep",
+    "CompanySort": "DEEPSTEP",
+    "GMADIST": 7,
+    "LATITUDE": "33.0176",
+    "LONGITUDE": "-82.9678"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "281",
+    "Company": "City of Demorest",
+    "CompanySort": "DEMOREST",
+    "GMADIST": 2,
+    "LATITUDE": "34.5649",
+    "LONGITUDE": "-83.5424"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62837",
+    "Company": "City of Denton",
+    "CompanySort": "DENTON",
+    "GMADIST": 9,
+    "LATITUDE": "31.7221",
+    "LONGITUDE": "-82.6968"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62839",
+    "Company": "City of DeSoto",
+    "CompanySort": "DESOTO",
+    "GMADIST": 8,
+    "LATITUDE": "31.9548",
+    "LONGITUDE": "-84.0636"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62840",
+    "Company": "City of Dexter",
+    "CompanySort": "DEXTER",
+    "GMADIST": 9,
+    "LATITUDE": "32.4331",
+    "LONGITUDE": "-83.0596"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "539",
+    "Company": "City of Dillard",
+    "CompanySort": "DILLARD",
+    "GMADIST": 2,
+    "LATITUDE": "34.9748",
+    "LONGITUDE": "-83.382"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "73",
+    "Company": "City of Doerun",
+    "CompanySort": "DOERUN",
+    "GMADIST": 10,
+    "LATITUDE": "31.3218",
+    "LONGITUDE": "-83.917"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "74",
+    "Company": "City of Donalsonville",
+    "CompanySort": "DONALSONVILLE",
+    "GMADIST": 10,
+    "LATITUDE": "31.0404",
+    "LONGITUDE": "-84.8792"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63262",
+    "Company": "City of Dooling",
+    "CompanySort": "DOOLING",
+    "GMADIST": 8,
+    "LATITUDE": "32.23",
+    "LONGITUDE": "-83.9289"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "75",
+    "Company": "City of Doraville",
+    "CompanySort": "DORAVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.9072",
+    "LONGITUDE": "-84.2711"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "76",
+    "Company": "City of Douglas",
+    "CompanySort": "DOUGLAS",
+    "GMADIST": 11,
+    "LATITUDE": "31.5073",
+    "LONGITUDE": "-82.8543"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "77",
+    "Company": "City of Douglasville",
+    "CompanySort": "DOUGLASVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.7383",
+    "LONGITUDE": "-84.7074"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "79",
+    "Company": "City of Dublin",
+    "CompanySort": "DUBLIN",
+    "GMADIST": 9,
+    "LATITUDE": "32.5357",
+    "LONGITUDE": "-82.9279"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "392",
+    "Company": "City of Dudley",
+    "CompanySort": "DUDLEY",
+    "GMADIST": 9,
+    "LATITUDE": "32.5321",
+    "LONGITUDE": "-83.0805"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "393",
+    "Company": "City of Duluth",
+    "CompanySort": "DULUTH",
+    "GMADIST": 3,
+    "LATITUDE": "34.0054",
+    "LONGITUDE": "-84.1494"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "83546",
+    "Company": "City of Dunwoody",
+    "CompanySort": "DUNWOODY",
+    "GMADIST": 3,
+    "LATITUDE": "33.9419",
+    "LONGITUDE": "-84.3122"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "394",
+    "Company": "Town of DuPont",
+    "CompanySort": "DUPONT",
+    "GMADIST": 11,
+    "LATITUDE": "30.9891",
+    "LONGITUDE": "-82.8691"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "284",
+    "Company": "City of East Dublin",
+    "CompanySort": "EAST DUBLIN",
+    "GMADIST": 9,
+    "LATITUDE": "32.5478",
+    "LONGITUDE": "-82.8686"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "81",
+    "Company": "City of East Ellijay",
+    "CompanySort": "EAST ELLIJAY",
+    "GMADIST": 1,
+    "LATITUDE": "34.6759",
+    "LONGITUDE": "-84.4761"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "82",
+    "Company": "City of East Point",
+    "CompanySort": "EAST POINT",
+    "GMADIST": 3,
+    "LATITUDE": "33.6696",
+    "LONGITUDE": "-84.47"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "83",
+    "Company": "City of Eastman",
+    "CompanySort": "EASTMAN",
+    "GMADIST": 9,
+    "LATITUDE": "32.1974",
+    "LONGITUDE": "-83.1715"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "84",
+    "Company": "City of Eatonton",
+    "CompanySort": "EATONTON",
+    "GMADIST": 6,
+    "LATITUDE": "33.3258",
+    "LONGITUDE": "-83.3886"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62861",
+    "Company": "City of Edgehill",
+    "CompanySort": "EDGEHILL",
+    "GMADIST": 7,
+    "LATITUDE": "33.1534",
+    "LONGITUDE": "-82.625"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "395",
+    "Company": "City of Edison",
+    "CompanySort": "EDISON",
+    "GMADIST": 10,
+    "LATITUDE": "31.5608",
+    "LONGITUDE": "-84.7374"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "85",
+    "Company": "City of Elberton",
+    "CompanySort": "ELBERTON",
+    "GMADIST": 5,
+    "LATITUDE": "34.1064",
+    "LONGITUDE": "-82.8706"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "86",
+    "Company": "City of Ellaville",
+    "CompanySort": "ELLAVILLE",
+    "GMADIST": 8,
+    "LATITUDE": "32.238",
+    "LONGITUDE": "-84.3089"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "396",
+    "Company": "City of Ellenton",
+    "CompanySort": "ELLENTON",
+    "GMADIST": 10,
+    "LATITUDE": "31.176",
+    "LONGITUDE": "-83.5876"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "87",
+    "Company": "City of Ellijay",
+    "CompanySort": "ELLIJAY",
+    "GMADIST": 1,
+    "LATITUDE": "34.6913",
+    "LONGITUDE": "-84.4839"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "89",
+    "Company": "City of Emerson",
+    "CompanySort": "EMERSON",
+    "GMADIST": 1,
+    "LATITUDE": "34.1303",
+    "LONGITUDE": "-84.7485"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "90",
+    "Company": "City of Enigma",
+    "CompanySort": "ENIGMA",
+    "GMADIST": 11,
+    "LATITUDE": "31.4076",
+    "LONGITUDE": "-83.329"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "533",
+    "Company": "Town of Ephesus",
+    "CompanySort": "EPHESUS",
+    "GMADIST": 4,
+    "LATITUDE": "33.407",
+    "LONGITUDE": "-85.2596"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "398",
+    "Company": "City of Eton",
+    "CompanySort": "ETON",
+    "GMADIST": 1,
+    "LATITUDE": "34.8266",
+    "LONGITUDE": "-84.7668"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "2040",
+    "Company": "City of Euharlee",
+    "CompanySort": "EUHARLEE",
+    "GMADIST": 1,
+    "LATITUDE": "34.1441",
+    "LONGITUDE": "-84.9327"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "91",
+    "Company": "City of Fairburn",
+    "CompanySort": "FAIRBURN",
+    "GMADIST": 3,
+    "LATITUDE": "33.5497",
+    "LONGITUDE": "-84.5914"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "285",
+    "Company": "City of Fairmount",
+    "CompanySort": "FAIRMOUNT",
+    "GMADIST": 1,
+    "LATITUDE": "34.438",
+    "LONGITUDE": "-84.6998"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "2041",
+    "Company": "City of Fargo",
+    "CompanySort": "FARGO",
+    "GMADIST": 11,
+    "LATITUDE": "30.6881",
+    "LONGITUDE": "-82.5721"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "92",
+    "Company": "City of Fayetteville",
+    "CompanySort": "FAYETTEVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.45",
+    "LONGITUDE": "-84.4707"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "399",
+    "Company": "City of Fitzgerald",
+    "CompanySort": "FITZGERALD",
+    "GMADIST": 11,
+    "LATITUDE": "31.7135",
+    "LONGITUDE": "-83.2516"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "565",
+    "Company": "City of Flemington",
+    "CompanySort": "FLEMINGTON",
+    "GMADIST": 12,
+    "LATITUDE": "31.8506",
+    "LONGITUDE": "-81.5604"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "400",
+    "Company": "City of Flovilla",
+    "CompanySort": "FLOVILLA",
+    "GMADIST": 4,
+    "LATITUDE": "33.2524",
+    "LONGITUDE": "-83.9029"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "526",
+    "Company": "City of Flowery Branch",
+    "CompanySort": "FLOWERY BRANCH",
+    "GMADIST": 2,
+    "LATITUDE": "34.176",
+    "LONGITUDE": "-83.9115"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "93",
+    "Company": "City of Folkston",
+    "CompanySort": "FOLKSTON",
+    "GMADIST": 11,
+    "LATITUDE": "30.8392",
+    "LONGITUDE": "-82.0072"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "401",
+    "Company": "City of Forest Park",
+    "CompanySort": "FOREST PARK",
+    "GMADIST": 3,
+    "LATITUDE": "33.6209",
+    "LONGITUDE": "-84.3592"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "402",
+    "Company": "City of Forsyth",
+    "CompanySort": "FORSYTH",
+    "GMADIST": 6,
+    "LATITUDE": "33.0347",
+    "LONGITUDE": "-83.938"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "286",
+    "Company": "City of Fort Gaines",
+    "CompanySort": "FORT GAINES",
+    "GMADIST": 8,
+    "LATITUDE": "31.6239",
+    "LONGITUDE": "-85.0529"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "94",
+    "Company": "City of Fort Oglethorpe",
+    "CompanySort": "FORT OGLETHORPE",
+    "GMADIST": 1,
+    "LATITUDE": "34.9318",
+    "LONGITUDE": "-85.246"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "95",
+    "Company": "City of Fort Valley",
+    "CompanySort": "FORT VALLEY",
+    "GMADIST": 6,
+    "LATITUDE": "32.5522",
+    "LONGITUDE": "-83.8815"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "97",
+    "Company": "City of Franklin",
+    "CompanySort": "FRANKLIN",
+    "GMADIST": 4,
+    "LATITUDE": "33.2792",
+    "LONGITUDE": "-85.098"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "534",
+    "Company": "City of Franklin Springs",
+    "CompanySort": "FRANKLIN SPRINGS",
+    "GMADIST": 2,
+    "LATITUDE": "34.284",
+    "LONGITUDE": "-83.1459"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62846",
+    "Company": "City of Funston",
+    "CompanySort": "FUNSTON",
+    "GMADIST": 10,
+    "LATITUDE": "31.1989",
+    "LONGITUDE": "-83.877"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "98",
+    "Company": "City of Gainesville",
+    "CompanySort": "GAINESVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.2903",
+    "LONGITUDE": "-83.83"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "100",
+    "Company": "City of Garden City",
+    "CompanySort": "GARDEN CITY",
+    "GMADIST": 12,
+    "LATITUDE": "32.0868",
+    "LONGITUDE": "-81.1773"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "403",
+    "Company": "City of Garfield",
+    "CompanySort": "GARFIELD",
+    "GMADIST": 9,
+    "LATITUDE": "32.6495",
+    "LONGITUDE": "-82.0962"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "404",
+    "Company": "Town of Gay",
+    "CompanySort": "GAY",
+    "GMADIST": 4,
+    "LATITUDE": "33.0937",
+    "LONGITUDE": "-84.5755"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "540",
+    "Company": "Town of Geneva",
+    "CompanySort": "GENEVA",
+    "GMADIST": 8,
+    "LATITUDE": "32.579",
+    "LONGITUDE": "-84.5516"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "405",
+    "Company": "Unified Government of Georgetown-Quitman County",
+    "CompanySort": "GEORGETOWN",
+    "GMADIST": 8,
+    "LATITUDE": "31.8673",
+    "LONGITUDE": "-85.0188"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "103",
+    "Company": "City of Gibson",
+    "CompanySort": "GIBSON",
+    "GMADIST": 7,
+    "LATITUDE": "33.2333",
+    "LONGITUDE": "-82.5959"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62847",
+    "Company": "Town of Gillsville",
+    "CompanySort": "GILLSVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.3093",
+    "LONGITUDE": "-83.6381"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "406",
+    "Company": "Town of Girard",
+    "CompanySort": "GIRARD",
+    "GMADIST": 7,
+    "LATITUDE": "33.04",
+    "LONGITUDE": "-81.7122"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "104",
+    "Company": "City of Glennville",
+    "CompanySort": "GLENNVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "31.9381",
+    "LONGITUDE": "-81.9304"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "407",
+    "Company": "City of Glenwood",
+    "CompanySort": "GLENWOOD",
+    "GMADIST": 9,
+    "LATITUDE": "32.1805",
+    "LONGITUDE": "-82.6712"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62848",
+    "Company": "Town of Good Hope",
+    "CompanySort": "GOOD HOPE",
+    "GMADIST": 5,
+    "LATITUDE": "33.785",
+    "LONGITUDE": "-83.6094"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "105",
+    "Company": "City of Gordon",
+    "CompanySort": "GORDON",
+    "GMADIST": 6,
+    "LATITUDE": "32.8866",
+    "LONGITUDE": "-83.3349"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "408",
+    "Company": "City of Graham",
+    "CompanySort": "GRAHAM",
+    "GMADIST": 9,
+    "LATITUDE": "31.8292",
+    "LONGITUDE": "-82.503"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "291",
+    "Company": "City of Grantville",
+    "CompanySort": "GRANTVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.2371",
+    "LONGITUDE": "-84.8293"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "269",
+    "Company": "City of Gray",
+    "CompanySort": "GRAY",
+    "GMADIST": 6,
+    "LATITUDE": "33.0024",
+    "LONGITUDE": "-83.5375"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "106",
+    "Company": "City of Grayson",
+    "CompanySort": "GRAYSON",
+    "GMADIST": 3,
+    "LATITUDE": "33.89",
+    "LONGITUDE": "-83.9576"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "107",
+    "Company": "City of Greensboro",
+    "CompanySort": "GREENSBORO",
+    "GMADIST": 5,
+    "LATITUDE": "33.5678",
+    "LONGITUDE": "-83.1877"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "108",
+    "Company": "City of Greenville",
+    "CompanySort": "GREENVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.0322",
+    "LONGITUDE": "-84.7162"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "287",
+    "Company": "City of Griffin",
+    "CompanySort": "GRIFFIN",
+    "GMADIST": 4,
+    "LATITUDE": "33.2419",
+    "LONGITUDE": "-84.2746"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "109",
+    "Company": "City of Grovetown",
+    "CompanySort": "GROVETOWN",
+    "GMADIST": 7,
+    "LATITUDE": "33.4503",
+    "LONGITUDE": "-82.2074"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62849",
+    "Company": "City of Gum Branch",
+    "CompanySort": "GUM BRANCH",
+    "GMADIST": 12,
+    "LATITUDE": "31.8368",
+    "LONGITUDE": "-81.6839"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "409",
+    "Company": "City of Guyton",
+    "CompanySort": "GUYTON",
+    "GMADIST": 12,
+    "LATITUDE": "32.3358",
+    "LONGITUDE": "-81.3926"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "410",
+    "Company": "City of Hagan",
+    "CompanySort": "HAGAN",
+    "GMADIST": 9,
+    "LATITUDE": "32.1536",
+    "LONGITUDE": "-81.9305"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "111",
+    "Company": "City of Hahira",
+    "CompanySort": "HAHIRA",
+    "GMADIST": 11,
+    "LATITUDE": "30.9942",
+    "LONGITUDE": "-83.3787"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "411",
+    "Company": "City of Hamilton",
+    "CompanySort": "HAMILTON",
+    "GMADIST": 8,
+    "LATITUDE": "32.7645",
+    "LONGITUDE": "-84.876"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "112",
+    "Company": "City of Hampton",
+    "CompanySort": "HAMPTON",
+    "GMADIST": 3,
+    "LATITUDE": "33.3834",
+    "LONGITUDE": "-84.2853"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "113",
+    "Company": "City of Hapeville",
+    "CompanySort": "HAPEVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.6609",
+    "LONGITUDE": "-84.4093"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63274",
+    "Company": "City of Haralson",
+    "CompanySort": "HARALSON",
+    "GMADIST": 4,
+    "LATITUDE": "33.2285",
+    "LONGITUDE": "-84.569"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "114",
+    "Company": "City of Harlem",
+    "CompanySort": "HARLEM",
+    "GMADIST": 7,
+    "LATITUDE": "33.4154",
+    "LONGITUDE": "-82.3138"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "412",
+    "Company": "Town of Harrison",
+    "CompanySort": "HARRISON",
+    "GMADIST": 7,
+    "LATITUDE": "32.8263",
+    "LONGITUDE": "-82.7258"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "115",
+    "Company": "City of Hartwell",
+    "CompanySort": "HARTWELL",
+    "GMADIST": 2,
+    "LATITUDE": "34.3502",
+    "LONGITUDE": "-82.9288"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "116",
+    "Company": "City of Hawkinsville",
+    "CompanySort": "HAWKINSVILLE",
+    "GMADIST": 6,
+    "LATITUDE": "32.2966",
+    "LONGITUDE": "-83.483"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "119",
+    "Company": "City of Hazlehurst",
+    "CompanySort": "HAZLEHURST",
+    "GMADIST": 9,
+    "LATITUDE": "31.8651",
+    "LONGITUDE": "-82.5994"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "345",
+    "Company": "City of Helen",
+    "CompanySort": "HELEN",
+    "GMADIST": 2,
+    "LATITUDE": "34.7044",
+    "LONGITUDE": "-83.7202"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "121",
+    "Company": "City of Hephzibah",
+    "CompanySort": "HEPHZIBAH",
+    "GMADIST": 7,
+    "LATITUDE": "33.2907",
+    "LONGITUDE": "-82.0994"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "413",
+    "Company": "City of Hiawassee",
+    "CompanySort": "HIAWASSEE",
+    "GMADIST": 2,
+    "LATITUDE": "34.9501",
+    "LONGITUDE": "-83.7529"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "414",
+    "Company": "City of Higgston",
+    "CompanySort": "HIGGSTON",
+    "GMADIST": 9,
+    "LATITUDE": "32.2164",
+    "LONGITUDE": "-82.467"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "2098",
+    "Company": "Town of Hiltonia",
+    "CompanySort": "HILTONIA",
+    "GMADIST": 12,
+    "LATITUDE": "32.8834",
+    "LONGITUDE": "-81.6613"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "122",
+    "Company": "City of Hinesville",
+    "CompanySort": "HINESVILLE",
+    "GMADIST": 12,
+    "LATITUDE": "31.8247",
+    "LONGITUDE": "-81.6134"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "123",
+    "Company": "City of Hiram",
+    "CompanySort": "HIRAM",
+    "GMADIST": 1,
+    "LATITUDE": "33.9103",
+    "LONGITUDE": "-84.7935"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "415",
+    "Company": "City of Hoboken",
+    "CompanySort": "HOBOKEN",
+    "GMADIST": 11,
+    "LATITUDE": "31.1812",
+    "LONGITUDE": "-82.1313"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "124",
+    "Company": "City of Hogansville",
+    "CompanySort": "HOGANSVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.1675",
+    "LONGITUDE": "-84.9029"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "125",
+    "Company": "City of Holly Springs",
+    "CompanySort": "HOLLY SPRINGS",
+    "GMADIST": 3,
+    "LATITUDE": "34.1681",
+    "LONGITUDE": "-84.4851"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "416",
+    "Company": "City of Homeland",
+    "CompanySort": "HOMELAND",
+    "GMADIST": 11,
+    "LATITUDE": "30.8603",
+    "LONGITUDE": "-82.0214"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "346",
+    "Company": "Town of Homer",
+    "CompanySort": "HOMER",
+    "GMADIST": 2,
+    "LATITUDE": "34.335",
+    "LONGITUDE": "-83.4987"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "295",
+    "Company": "City of Homerville",
+    "CompanySort": "HOMERVILLE",
+    "GMADIST": 11,
+    "LATITUDE": "31.0386",
+    "LONGITUDE": "-82.742"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "417",
+    "Company": "City of Hoschton",
+    "CompanySort": "HOSCHTON",
+    "GMADIST": 5,
+    "LATITUDE": "34.0934",
+    "LONGITUDE": "-83.7617"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "418",
+    "Company": "City of Hull",
+    "CompanySort": "HULL",
+    "GMADIST": 5,
+    "LATITUDE": "34.0154",
+    "LONGITUDE": "-83.2939"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "419",
+    "Company": "City of Ideal",
+    "CompanySort": "IDEAL",
+    "GMADIST": 8,
+    "LATITUDE": "32.3726",
+    "LONGITUDE": "-84.1894"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "420",
+    "Company": "City of Ila",
+    "CompanySort": "ILA",
+    "GMADIST": 5,
+    "LATITUDE": "34.1729",
+    "LONGITUDE": "-83.2929"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "421",
+    "Company": "Town of Iron City",
+    "CompanySort": "IRON CITY",
+    "GMADIST": 10,
+    "LATITUDE": "31.0136",
+    "LONGITUDE": "-84.8133"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "422",
+    "Company": "City of Irwinton",
+    "CompanySort": "IRWINTON",
+    "GMADIST": 6,
+    "LATITUDE": "32.8108",
+    "LONGITUDE": "-83.1737"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "423",
+    "Company": "Town of Ivey",
+    "CompanySort": "IVEY",
+    "GMADIST": 6,
+    "LATITUDE": "32.9092",
+    "LONGITUDE": "-83.2983"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "126",
+    "Company": "City of Jackson",
+    "CompanySort": "JACKSON",
+    "GMADIST": 4,
+    "LATITUDE": "33.2913",
+    "LONGITUDE": "-83.968"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63263",
+    "Company": "City of Jacksonville",
+    "CompanySort": "JACKSONVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "31.8126",
+    "LONGITUDE": "-82.979"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "541",
+    "Company": "City of Jakin",
+    "CompanySort": "JAKIN",
+    "GMADIST": 10,
+    "LATITUDE": "31.0901",
+    "LONGITUDE": "-84.9823"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "127",
+    "Company": "City of Jasper",
+    "CompanySort": "JASPER",
+    "GMADIST": 1,
+    "LATITUDE": "34.4543",
+    "LONGITUDE": "-84.4529"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "128",
+    "Company": "City of Jefferson",
+    "CompanySort": "JEFFERSON",
+    "GMADIST": 5,
+    "LATITUDE": "34.1366",
+    "LONGITUDE": "-83.6022"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "129",
+    "Company": "City of Jeffersonville",
+    "CompanySort": "JEFFERSONVILLE",
+    "GMADIST": 6,
+    "LATITUDE": "32.6863",
+    "LONGITUDE": "-83.3433"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "424",
+    "Company": "City of Jenkinsburg",
+    "CompanySort": "JENKINSBURG",
+    "GMADIST": 4,
+    "LATITUDE": "33.3228",
+    "LONGITUDE": "-84.0384"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63241",
+    "Company": "City of Jersey",
+    "CompanySort": "JERSEY",
+    "GMADIST": 5,
+    "LATITUDE": "33.7177",
+    "LONGITUDE": "-83.8"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "130",
+    "Company": "City of Jesup",
+    "CompanySort": "JESUP",
+    "GMADIST": 9,
+    "LATITUDE": "31.5991",
+    "LONGITUDE": "-81.8898"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "79799",
+    "Company": "City of Johns Creek",
+    "CompanySort": "JOHNS CREEK",
+    "GMADIST": 3,
+    "LATITUDE": "34.0333",
+    "LONGITUDE": "-84.2027"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "132",
+    "Company": "City of Jonesboro",
+    "CompanySort": "JONESBORO",
+    "GMADIST": 3,
+    "LATITUDE": "33.5211",
+    "LONGITUDE": "-84.3541"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "425",
+    "Company": "Town of Junction City",
+    "CompanySort": "JUNCTION CITY",
+    "GMADIST": 8,
+    "LATITUDE": "32.6032",
+    "LONGITUDE": "-84.4574"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "133",
+    "Company": "City of Kennesaw",
+    "CompanySort": "KENNESAW",
+    "GMADIST": 3,
+    "LATITUDE": "34.0261",
+    "LONGITUDE": "-84.6177"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "426",
+    "Company": "Town of Keysville",
+    "CompanySort": "KEYSVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "33.2374",
+    "LONGITUDE": "-82.2289"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "134",
+    "Company": "City of Kingsland",
+    "CompanySort": "KINGSLAND",
+    "GMADIST": 12,
+    "LATITUDE": "30.8026",
+    "LONGITUDE": "-81.7076"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "427",
+    "Company": "City of Kingston",
+    "CompanySort": "KINGSTON",
+    "GMADIST": 1,
+    "LATITUDE": "34.232",
+    "LONGITUDE": "-84.9445"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "428",
+    "Company": "Town of Kite",
+    "CompanySort": "KITE",
+    "GMADIST": 9,
+    "LATITUDE": "32.6922",
+    "LONGITUDE": "-82.5135"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "135",
+    "Company": "City of LaFayette",
+    "CompanySort": "LAFAYETTE",
+    "GMADIST": 1,
+    "LATITUDE": "34.7088",
+    "LONGITUDE": "-85.2815"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "136",
+    "Company": "City of LaGrange",
+    "CompanySort": "LAGRANGE",
+    "GMADIST": 4,
+    "LATITUDE": "33.0276",
+    "LONGITUDE": "-85.0383"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "429",
+    "Company": "City of Lake City",
+    "CompanySort": "LAKE CITY",
+    "GMADIST": 3,
+    "LATITUDE": "33.6065",
+    "LONGITUDE": "-84.3411"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "139",
+    "Company": "City of Lake Park",
+    "CompanySort": "LAKE PARK",
+    "GMADIST": 11,
+    "LATITUDE": "30.6851",
+    "LONGITUDE": "-83.1874"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "430",
+    "Company": "City of Lakeland",
+    "CompanySort": "LAKELAND",
+    "GMADIST": 11,
+    "LATITUDE": "31.041",
+    "LONGITUDE": "-83.0748"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "140",
+    "Company": "City of Lavonia",
+    "CompanySort": "LAVONIA",
+    "GMADIST": 2,
+    "LATITUDE": "34.4344",
+    "LONGITUDE": "-83.1082"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "431",
+    "Company": "City of Lawrenceville",
+    "CompanySort": "LAWRENCEVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.9523",
+    "LONGITUDE": "-83.993"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "570",
+    "Company": "City of Leary",
+    "CompanySort": "LEARY",
+    "GMADIST": 10,
+    "LATITUDE": "31.4847",
+    "LONGITUDE": "-84.5133"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "142",
+    "Company": "City of Leesburg",
+    "CompanySort": "LEESBURG",
+    "GMADIST": 10,
+    "LATITUDE": "31.7325",
+    "LONGITUDE": "-84.1687"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "143",
+    "Company": "City of Lenox",
+    "CompanySort": "LENOX",
+    "GMADIST": 11,
+    "LATITUDE": "31.2673",
+    "LONGITUDE": "-83.4672"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "528",
+    "Company": "Town of Leslie",
+    "CompanySort": "LESLIE",
+    "GMADIST": 8,
+    "LATITUDE": "31.9545",
+    "LONGITUDE": "-84.0864"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "432",
+    "Company": "City of Lexington",
+    "CompanySort": "LEXINGTON",
+    "GMADIST": 5,
+    "LATITUDE": "33.8701",
+    "LONGITUDE": "-83.1102"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "433",
+    "Company": "City of Lilburn",
+    "CompanySort": "LILBURN",
+    "GMADIST": 3,
+    "LATITUDE": "33.8887",
+    "LONGITUDE": "-84.1379"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63249",
+    "Company": "City of Lilly",
+    "CompanySort": "LILLY",
+    "GMADIST": 8,
+    "LATITUDE": "32.1465",
+    "LONGITUDE": "-83.8775"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "144",
+    "Company": "City of Lincolnton",
+    "CompanySort": "LINCOLNTON",
+    "GMADIST": 7,
+    "LATITUDE": "33.7931",
+    "LONGITUDE": "-82.4777"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "145",
+    "Company": "City of Lithonia",
+    "CompanySort": "LITHONIA",
+    "GMADIST": 3,
+    "LATITUDE": "33.7128",
+    "LONGITUDE": "-84.106"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "146",
+    "Company": "City of Locust Grove",
+    "CompanySort": "LOCUST GROVE",
+    "GMADIST": 3,
+    "LATITUDE": "33.3438",
+    "LONGITUDE": "-84.107"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "147",
+    "Company": "City of Loganville",
+    "CompanySort": "LOGANVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.8353",
+    "LONGITUDE": "-83.8957"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63283",
+    "Company": "Town of Lone Oak",
+    "CompanySort": "LONE OAK",
+    "GMADIST": 4,
+    "LATITUDE": "33.1724",
+    "LONGITUDE": "-84.8173"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "148",
+    "Company": "City of Lookout Mountain",
+    "CompanySort": "LOOKOUT MOUNTAIN",
+    "GMADIST": 1,
+    "LATITUDE": "34.9664",
+    "LONGITUDE": "-85.3622"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "149",
+    "Company": "City of Louisville",
+    "CompanySort": "LOUISVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "32.9955",
+    "LONGITUDE": "-82.4"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63264",
+    "Company": "City of Lovejoy",
+    "CompanySort": "LOVEJOY",
+    "GMADIST": 3,
+    "LATITUDE": "33.4422",
+    "LONGITUDE": "-84.3179"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "2063",
+    "Company": "City of Ludowici",
+    "CompanySort": "LUDOWICI",
+    "GMADIST": 12,
+    "LATITUDE": "31.7096",
+    "LONGITUDE": "-81.7457"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "434",
+    "Company": "City of Lula",
+    "CompanySort": "LULA",
+    "GMADIST": 2,
+    "LATITUDE": "34.3953",
+    "LONGITUDE": "-83.665"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "150",
+    "Company": "City of Lumber City",
+    "CompanySort": "LUMBER CITY",
+    "GMADIST": 9,
+    "LATITUDE": "31.933",
+    "LONGITUDE": "-82.6828"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "151",
+    "Company": "City of Lumpkin",
+    "CompanySort": "LUMPKIN",
+    "GMADIST": 8,
+    "LATITUDE": "32.0488",
+    "LONGITUDE": "-84.798"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "299",
+    "Company": "City of Luthersville",
+    "CompanySort": "LUTHERSVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.2096",
+    "LONGITUDE": "-84.7443"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "435",
+    "Company": "Town of Lyerly",
+    "CompanySort": "LYERLY",
+    "GMADIST": 1,
+    "LATITUDE": "34.4034",
+    "LONGITUDE": "-85.4041"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "152",
+    "Company": "City of Lyons",
+    "CompanySort": "LYONS",
+    "GMADIST": 9,
+    "LATITUDE": "32.2053",
+    "LONGITUDE": "-82.3214"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "121347",
+    "Company": "City of Mableton",
+    "CompanySort": "MABLETON",
+    "GMADIST": 3,
+    "LATITUDE": "33.813355",
+    "LONGITUDE": "-84.571691"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "436",
+    "Company": "Macon-Bibb County",
+    "CompanySort": "MACON-Bibb",
+    "GMADIST": 6,
+    "LATITUDE": "32.837031",
+    "LONGITUDE": "-83.629057"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "153",
+    "Company": "City of Madison",
+    "CompanySort": "MADISON",
+    "GMADIST": 5,
+    "LATITUDE": "33.5791",
+    "LONGITUDE": "-83.4758"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63275",
+    "Company": "City of Manassas",
+    "CompanySort": "MANASSAS",
+    "GMADIST": 9,
+    "LATITUDE": "32.1603",
+    "LONGITUDE": "-82.02"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "154",
+    "Company": "City of Manchester",
+    "CompanySort": "MANCHESTER",
+    "GMADIST": 4,
+    "LATITUDE": "32.8566",
+    "LONGITUDE": "-84.633"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "437",
+    "Company": "City of Mansfield",
+    "CompanySort": "MANSFIELD",
+    "GMADIST": 5,
+    "LATITUDE": "33.5178",
+    "LONGITUDE": "-83.7354"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "438",
+    "Company": "City of Marietta",
+    "CompanySort": "MARIETTA",
+    "GMADIST": 3,
+    "LATITUDE": "33.9532",
+    "LONGITUDE": "-84.5421"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "155",
+    "Company": "City of Marshallville",
+    "CompanySort": "MARSHALLVILLE",
+    "GMADIST": 8,
+    "LATITUDE": "32.4564",
+    "LONGITUDE": "-83.9407"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "439",
+    "Company": "Town of Martin",
+    "CompanySort": "MARTIN",
+    "GMADIST": 2,
+    "LATITUDE": "34.4856",
+    "LONGITUDE": "-83.1983"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "549",
+    "Company": "Town of Maxeys",
+    "CompanySort": "MAXEYS",
+    "GMADIST": 5,
+    "LATITUDE": "33.7555",
+    "LONGITUDE": "-83.1737"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "571",
+    "Company": "City of Maysville",
+    "CompanySort": "MAYSVILLE",
+    "GMADIST": 2,
+    "LATITUDE": "34.2557",
+    "LONGITUDE": "-83.5528"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "440",
+    "Company": "City of McCaysville",
+    "CompanySort": "MCCAYSVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.9811",
+    "LONGITUDE": "-84.3705"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "441",
+    "Company": "City of McDonough",
+    "CompanySort": "MCDONOUGH",
+    "GMADIST": 3,
+    "LATITUDE": "33.4399",
+    "LONGITUDE": "-84.1509"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "442",
+    "Company": "City of McIntyre",
+    "CompanySort": "MCINTYRE",
+    "GMADIST": 6,
+    "LATITUDE": "32.8466",
+    "LONGITUDE": "-83.2011"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "97786",
+    "Company": "City of McRae-Helena",
+    "CompanySort": "MCRAE-HELENA",
+    "GMADIST": 9,
+    "LATITUDE": "32.063593",
+    "LONGITUDE": "-82.896903"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "443",
+    "Company": "City of Meansville",
+    "CompanySort": "MEANSVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.0509",
+    "LONGITUDE": "-84.3084"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "300",
+    "Company": "City of Meigs",
+    "CompanySort": "MEIGS",
+    "GMADIST": 10,
+    "LATITUDE": "31.0714",
+    "LONGITUDE": "-84.0922"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "444",
+    "Company": "City of Menlo",
+    "CompanySort": "MENLO",
+    "GMADIST": 1,
+    "LATITUDE": "34.4835",
+    "LONGITUDE": "-85.4776"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "158",
+    "Company": "City of Metter",
+    "CompanySort": "METTER",
+    "GMADIST": 9,
+    "LATITUDE": "32.396",
+    "LONGITUDE": "-82.0624"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "445",
+    "Company": "City of Midville",
+    "CompanySort": "MIDVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "32.8218",
+    "LONGITUDE": "-82.2346"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "446",
+    "Company": "City of Midway",
+    "CompanySort": "MIDWAY",
+    "GMADIST": 12,
+    "LATITUDE": "31.8004",
+    "LONGITUDE": "-81.4191"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "447",
+    "Company": "City of Milan",
+    "CompanySort": "MILAN",
+    "GMADIST": 9,
+    "LATITUDE": "32.0195",
+    "LONGITUDE": "-83.0631"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "301",
+    "Company": "City of Milledgeville",
+    "CompanySort": "MILLEDGEVILLE",
+    "GMADIST": 6,
+    "LATITUDE": "33.0874",
+    "LONGITUDE": "-83.2414"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "160",
+    "Company": "City of Millen",
+    "CompanySort": "MILLEN",
+    "GMADIST": 7,
+    "LATITUDE": "32.8071",
+    "LONGITUDE": "-81.9423"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "448",
+    "Company": "City of Milner",
+    "CompanySort": "MILNER",
+    "GMADIST": 4,
+    "LATITUDE": "33.1177",
+    "LONGITUDE": "-84.1926"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "79516",
+    "Company": "City of Milton",
+    "CompanySort": "MILTON",
+    "GMADIST": 3,
+    "LATITUDE": "34.1353",
+    "LONGITUDE": "-84.3138"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "546",
+    "Company": "Town of Mitchell",
+    "CompanySort": "MITCHELL",
+    "GMADIST": 7,
+    "LATITUDE": "33.2199",
+    "LONGITUDE": "-82.7031"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "529",
+    "Company": "City of Molena",
+    "CompanySort": "MOLENA",
+    "GMADIST": 4,
+    "LATITUDE": "33.0119",
+    "LONGITUDE": "-84.5001"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "161",
+    "Company": "City of Monroe",
+    "CompanySort": "MONROE",
+    "GMADIST": 5,
+    "LATITUDE": "33.7997",
+    "LONGITUDE": "-83.7155"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "163",
+    "Company": "City of Montezuma",
+    "CompanySort": "MONTEZUMA",
+    "GMADIST": 8,
+    "LATITUDE": "32.2997",
+    "LONGITUDE": "-84.0246"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "164",
+    "Company": "City of Monticello",
+    "CompanySort": "MONTICELLO",
+    "GMADIST": 5,
+    "LATITUDE": "33.3075",
+    "LONGITUDE": "-83.6861"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "449",
+    "Company": "Town of Montrose",
+    "CompanySort": "MONTROSE",
+    "GMADIST": 9,
+    "LATITUDE": "32.5594",
+    "LONGITUDE": "-83.1535"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "450",
+    "Company": "Town of Moreland",
+    "CompanySort": "MORELAND",
+    "GMADIST": 4,
+    "LATITUDE": "33.2861",
+    "LONGITUDE": "-84.77"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "451",
+    "Company": "City of Morgan",
+    "CompanySort": "MORGAN",
+    "GMADIST": 10,
+    "LATITUDE": "31.5381",
+    "LONGITUDE": "-84.6032"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "557",
+    "Company": "City of Morganton",
+    "CompanySort": "MORGANTON",
+    "GMADIST": 1,
+    "LATITUDE": "34.8757",
+    "LONGITUDE": "-84.2444"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "165",
+    "Company": "City of Morrow",
+    "CompanySort": "MORROW",
+    "GMADIST": 3,
+    "LATITUDE": "33.5816",
+    "LONGITUDE": "-84.3392"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "452",
+    "Company": "City of Morven",
+    "CompanySort": "MORVEN",
+    "GMADIST": 11,
+    "LATITUDE": "30.9433",
+    "LONGITUDE": "-83.5003"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "166",
+    "Company": "City of Moultrie",
+    "CompanySort": "MOULTRIE",
+    "GMADIST": 10,
+    "LATITUDE": "31.1645",
+    "LONGITUDE": "-83.7835"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "167",
+    "Company": "Town of Mount Airy",
+    "CompanySort": "MOUNT AIRY",
+    "GMADIST": 2,
+    "LATITUDE": "34.5219",
+    "LONGITUDE": "-83.4975"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "168",
+    "Company": "City of Mount Vernon",
+    "CompanySort": "MOUNT VERNON",
+    "GMADIST": 9,
+    "LATITUDE": "32.1836",
+    "LONGITUDE": "-82.5953"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "454",
+    "Company": "City of Mount Zion",
+    "CompanySort": "MOUNT ZION",
+    "GMADIST": 4,
+    "LATITUDE": "33.6408",
+    "LONGITUDE": "-85.18"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "556",
+    "Company": "Town of Mountain City",
+    "CompanySort": "MOUNTAIN CITY",
+    "GMADIST": 2,
+    "LATITUDE": "34.9196",
+    "LONGITUDE": "-83.3854"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "453",
+    "Company": "City of Mountain Park",
+    "CompanySort": "MOUNTAIN PARK",
+    "GMADIST": 3,
+    "LATITUDE": "34.083",
+    "LONGITUDE": "-84.4133"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "131806",
+    "Company": "City of Mulberry",
+    "CompanySort": "MULBERRY",
+    "GMADIST": 3,
+    "LATITUDE": "34.067940",
+    "LONGITUDE": "-83.9076417"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "455",
+    "Company": "City of Nahunta",
+    "CompanySort": "NAHUNTA",
+    "GMADIST": 11,
+    "LATITUDE": "31.2065",
+    "LONGITUDE": "-81.9814"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "170",
+    "Company": "City of Nashville",
+    "CompanySort": "NASHVILLE",
+    "GMADIST": 11,
+    "LATITUDE": "31.2051",
+    "LONGITUDE": "-83.2486"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "456",
+    "Company": "City of Nelson",
+    "CompanySort": "NELSON",
+    "GMADIST": 1,
+    "LATITUDE": "34.3791",
+    "LONGITUDE": "-84.3708"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "457",
+    "Company": "Town of Newborn",
+    "CompanySort": "NEWBORN",
+    "GMADIST": 5,
+    "LATITUDE": "33.5163",
+    "LONGITUDE": "-83.6959"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "458",
+    "Company": "Town of Newington",
+    "CompanySort": "NEWINGTON",
+    "GMADIST": 12,
+    "LATITUDE": "32.5888",
+    "LONGITUDE": "-81.5063"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "171",
+    "Company": "City of Newnan",
+    "CompanySort": "NEWNAN",
+    "GMADIST": 4,
+    "LATITUDE": "33.3763",
+    "LONGITUDE": "-84.7758"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "173",
+    "Company": "City of Newton",
+    "CompanySort": "NEWTON",
+    "GMADIST": 10,
+    "LATITUDE": "31.3172",
+    "LONGITUDE": "-84.3376"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "304",
+    "Company": "City of Nicholls",
+    "CompanySort": "NICHOLLS",
+    "GMADIST": 11,
+    "LATITUDE": "31.5192",
+    "LONGITUDE": "-82.6387"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "459",
+    "Company": "City of Nicholson",
+    "CompanySort": "NICHOLSON",
+    "GMADIST": 5,
+    "LATITUDE": "34.1173",
+    "LONGITUDE": "-83.4289"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "175",
+    "Company": "City of Norcross",
+    "CompanySort": "NORCROSS",
+    "GMADIST": 3,
+    "LATITUDE": "33.9379",
+    "LONGITUDE": "-84.2065"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "305",
+    "Company": "City of Norman Park",
+    "CompanySort": "NORMAN PARK",
+    "GMADIST": 10,
+    "LATITUDE": "31.2692",
+    "LONGITUDE": "-83.6843"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "537",
+    "Company": "Town of North High Shoals",
+    "CompanySort": "NORTH HIGH SHOALS",
+    "GMADIST": 5,
+    "LATITUDE": "33.8273",
+    "LONGITUDE": "-83.5015"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "460",
+    "Company": "City of Norwood",
+    "CompanySort": "NORWOOD",
+    "GMADIST": 7,
+    "LATITUDE": "33.4625",
+    "LONGITUDE": "-82.7055"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63251",
+    "Company": "City of Nunez",
+    "CompanySort": "NUNEZ",
+    "GMADIST": 9,
+    "LATITUDE": "32.492",
+    "LONGITUDE": "-82.3467"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63277",
+    "Company": "City of Oak Park",
+    "CompanySort": "OAK PARK",
+    "GMADIST": 9,
+    "LATITUDE": "32.3891",
+    "LONGITUDE": "-82.3165"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "176",
+    "Company": "City of Oakwood",
+    "CompanySort": "OAKWOOD",
+    "GMADIST": 2,
+    "LATITUDE": "34.2236",
+    "LONGITUDE": "-83.8849"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "461",
+    "Company": "Town of Ochlocknee",
+    "CompanySort": "OCHLOCKNEE",
+    "GMADIST": 10,
+    "LATITUDE": "30.9752",
+    "LONGITUDE": "-84.0518"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "177",
+    "Company": "City of Ocilla",
+    "CompanySort": "OCILLA",
+    "GMADIST": 11,
+    "LATITUDE": "31.5986",
+    "LONGITUDE": "-83.2498"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "462",
+    "Company": "City of Oconee",
+    "CompanySort": "OCONEE",
+    "GMADIST": 7,
+    "LATITUDE": "32.8535",
+    "LONGITUDE": "-82.9577"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "178",
+    "Company": "City of Odum",
+    "CompanySort": "ODUM",
+    "GMADIST": 9,
+    "LATITUDE": "31.6665",
+    "LONGITUDE": "-82.0269"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "562",
+    "Company": "City of Offerman",
+    "CompanySort": "OFFERMAN",
+    "GMADIST": 11,
+    "LATITUDE": "31.4088",
+    "LONGITUDE": "-82.1132"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "179",
+    "Company": "City of Oglethorpe",
+    "CompanySort": "OGLETHORPE",
+    "GMADIST": 8,
+    "LATITUDE": "32.2935",
+    "LONGITUDE": "-84.0623"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "463",
+    "Company": "City of Oliver",
+    "CompanySort": "OLIVER",
+    "GMADIST": 12,
+    "LATITUDE": "32.5215",
+    "LONGITUDE": "-81.5331"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "464",
+    "Company": "City of Omega",
+    "CompanySort": "OMEGA",
+    "GMADIST": 11,
+    "LATITUDE": "31.3389",
+    "LONGITUDE": "-83.5949"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "465",
+    "Company": "City of Orchard Hill",
+    "CompanySort": "ORCHARD HILL",
+    "GMADIST": 4,
+    "LATITUDE": "33.1851",
+    "LONGITUDE": "-84.2123"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "180",
+    "Company": "City of Oxford",
+    "CompanySort": "OXFORD",
+    "GMADIST": 5,
+    "LATITUDE": "33.6277",
+    "LONGITUDE": "-83.8721"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "181",
+    "Company": "City of Palmetto",
+    "CompanySort": "PALMETTO",
+    "GMADIST": 3,
+    "LATITUDE": "33.5311",
+    "LONGITUDE": "-84.6679"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "466",
+    "Company": "Town of Parrott",
+    "CompanySort": "PARROTT",
+    "GMADIST": 10,
+    "LATITUDE": "31.8944",
+    "LONGITUDE": "-84.5118"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "182",
+    "Company": "City of Patterson",
+    "CompanySort": "PATTERSON",
+    "GMADIST": 11,
+    "LATITUDE": "31.3853",
+    "LONGITUDE": "-82.1371"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "467",
+    "Company": "City of Pavo",
+    "CompanySort": "PAVO",
+    "GMADIST": 10,
+    "LATITUDE": "30.9597",
+    "LONGITUDE": "-83.738"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "183",
+    "Company": "City of Peachtree City",
+    "CompanySort": "PEACHTREE CITY",
+    "GMADIST": 3,
+    "LATITUDE": "33.3942",
+    "LONGITUDE": "-84.5711"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "92615",
+    "Company": "City of Peachtree Corners",
+    "CompanySort": "PEACHTREE CORNERS",
+    "GMADIST": 3,
+    "LATITUDE": "33.967",
+    "LONGITUDE": "-84.2319"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "306",
+    "Company": "City of Pearson",
+    "CompanySort": "PEARSON",
+    "GMADIST": 11,
+    "LATITUDE": "31.297",
+    "LONGITUDE": "-82.8544"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "184",
+    "Company": "City of Pelham",
+    "CompanySort": "PELHAM",
+    "GMADIST": 10,
+    "LATITUDE": "31.1266",
+    "LONGITUDE": "-84.1515"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "185",
+    "Company": "City of Pembroke",
+    "CompanySort": "PEMBROKE",
+    "GMADIST": 12,
+    "LATITUDE": "32.1455",
+    "LONGITUDE": "-81.6186"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "468",
+    "Company": "City of Pendergrass",
+    "CompanySort": "PENDERGRASS",
+    "GMADIST": 5,
+    "LATITUDE": "34.1647",
+    "LONGITUDE": "-83.6827"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "187",
+    "Company": "City of Perry",
+    "CompanySort": "PERRY",
+    "GMADIST": 6,
+    "LATITUDE": "32.4713",
+    "LONGITUDE": "-83.7282"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "188",
+    "Company": "City of Pine Lake",
+    "CompanySort": "PINE LAKE",
+    "GMADIST": 3,
+    "LATITUDE": "33.7905",
+    "LONGITUDE": "-84.2061"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "189",
+    "Company": "Town of Pine Mountain",
+    "CompanySort": "PINE MOUNTAIN",
+    "GMADIST": 8,
+    "LATITUDE": "32.8524",
+    "LONGITUDE": "-84.8531"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "469",
+    "Company": "City of Pinehurst",
+    "CompanySort": "PINEHURST",
+    "GMADIST": 8,
+    "LATITUDE": "32.1956",
+    "LONGITUDE": "-83.7597"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "530",
+    "Company": "City of Pineview",
+    "CompanySort": "PINEVIEW",
+    "GMADIST": 9,
+    "LATITUDE": "32.1085",
+    "LONGITUDE": "-83.503"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63260",
+    "Company": "City of Pitts",
+    "CompanySort": "PITTS",
+    "GMADIST": 9,
+    "LATITUDE": "31.9462",
+    "LONGITUDE": "-83.5418"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "470",
+    "Company": "City of Plains",
+    "CompanySort": "PLAINS",
+    "GMADIST": 8,
+    "LATITUDE": "32.0331",
+    "LONGITUDE": "-84.3945"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "471",
+    "Company": "City of Plainville",
+    "CompanySort": "PLAINVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.4053",
+    "LONGITUDE": "-85.0315"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "190",
+    "Company": "City of Pooler",
+    "CompanySort": "POOLER",
+    "GMADIST": 12,
+    "LATITUDE": "32.1024",
+    "LONGITUDE": "-81.2539"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "191",
+    "Company": "City of Port Wentworth",
+    "CompanySort": "PORT WENTWORTH",
+    "GMADIST": 12,
+    "LATITUDE": "32.1941",
+    "LONGITUDE": "-81.1983"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "322",
+    "Company": "Town of Portal",
+    "CompanySort": "PORTAL",
+    "GMADIST": 12,
+    "LATITUDE": "32.5382",
+    "LONGITUDE": "-81.9297"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "472",
+    "Company": "City of Porterdale",
+    "CompanySort": "PORTERDALE",
+    "GMADIST": 5,
+    "LATITUDE": "33.5741",
+    "LONGITUDE": "-83.8943"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "473",
+    "Company": "City of Poulan",
+    "CompanySort": "POULAN",
+    "GMADIST": 10,
+    "LATITUDE": "31.5145",
+    "LONGITUDE": "-83.7898"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "474",
+    "Company": "City of Powder Springs",
+    "CompanySort": "POWDER SPRINGS",
+    "GMADIST": 3,
+    "LATITUDE": "33.866",
+    "LONGITUDE": "-84.6837"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "564",
+    "Company": "Town of Pulaski",
+    "CompanySort": "PULASKI",
+    "GMADIST": 9,
+    "LATITUDE": "32.3904",
+    "LONGITUDE": "-81.9565"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "192",
+    "Company": "City of Quitman",
+    "CompanySort": "QUITMAN",
+    "GMADIST": 11,
+    "LATITUDE": "30.7849",
+    "LONGITUDE": "-83.5603"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "476",
+    "Company": "City of Ray City",
+    "CompanySort": "RAY CITY",
+    "GMADIST": 11,
+    "LATITUDE": "31.0757",
+    "LONGITUDE": "-83.1969"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63255",
+    "Company": "Town of Rayle",
+    "CompanySort": "RAYLE",
+    "GMADIST": 7,
+    "LATITUDE": "33.7902",
+    "LONGITUDE": "-82.9031"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "477",
+    "Company": "City of Rebecca",
+    "CompanySort": "REBECCA",
+    "GMADIST": 11,
+    "LATITUDE": "31.8072",
+    "LONGITUDE": "-83.4876"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "478",
+    "Company": "Town of Register",
+    "CompanySort": "REGISTER",
+    "GMADIST": 12,
+    "LATITUDE": "32.3657",
+    "LONGITUDE": "-81.8845"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "193",
+    "Company": "City of Reidsville",
+    "CompanySort": "REIDSVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "32.0871",
+    "LONGITUDE": "-82.1244"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "479",
+    "Company": "City of Remerton",
+    "CompanySort": "REMERTON",
+    "GMADIST": 11,
+    "LATITUDE": "30.8441",
+    "LONGITUDE": "-83.3085"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "331",
+    "Company": "Town of Rentz",
+    "CompanySort": "RENTZ",
+    "GMADIST": 9,
+    "LATITUDE": "32.3835",
+    "LONGITUDE": "-82.9917"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "572",
+    "Company": "Town of Resaca",
+    "CompanySort": "RESACA",
+    "GMADIST": 1,
+    "LATITUDE": "34.5789",
+    "LONGITUDE": "-84.944"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63243",
+    "Company": "City of Rest Haven",
+    "CompanySort": "REST HAVEN",
+    "GMADIST": 3,
+    "LATITUDE": "34.133677",
+    "LONGITUDE": "-83.976008"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "194",
+    "Company": "City of Reynolds",
+    "CompanySort": "REYNOLDS",
+    "GMADIST": 8,
+    "LATITUDE": "32.5608",
+    "LONGITUDE": "-84.0945"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "554",
+    "Company": "Town of Rhine",
+    "CompanySort": "RHINE",
+    "GMADIST": 9,
+    "LATITUDE": "31.9891",
+    "LONGITUDE": "-83.2"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "480",
+    "Company": "City of Riceboro",
+    "CompanySort": "RICEBORO",
+    "GMADIST": 12,
+    "LATITUDE": "31.7264",
+    "LONGITUDE": "-81.4438"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "481",
+    "Company": "City of Richland",
+    "CompanySort": "RICHLAND",
+    "GMADIST": 8,
+    "LATITUDE": "32.0885",
+    "LONGITUDE": "-84.6626"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "195",
+    "Company": "City of Richmond Hill",
+    "CompanySort": "RICHMOND HILL",
+    "GMADIST": 12,
+    "LATITUDE": "31.9206",
+    "LONGITUDE": "-81.3172"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63266",
+    "Company": "Town of Riddleville",
+    "CompanySort": "RIDDLEVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "32.9069",
+    "LONGITUDE": "-82.6661"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "196",
+    "Company": "City of Rincon",
+    "CompanySort": "RINCON",
+    "GMADIST": 12,
+    "LATITUDE": "32.2942",
+    "LONGITUDE": "-81.2356"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "307",
+    "Company": "City of Ringgold",
+    "CompanySort": "RINGGOLD",
+    "GMADIST": 1,
+    "LATITUDE": "34.914",
+    "LONGITUDE": "-85.1221"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "482",
+    "Company": "City of Riverdale",
+    "CompanySort": "RIVERDALE",
+    "GMADIST": 3,
+    "LATITUDE": "33.5638",
+    "LONGITUDE": "-84.4102"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "197",
+    "Company": "City of Roberta",
+    "CompanySort": "ROBERTA",
+    "GMADIST": 6,
+    "LATITUDE": "32.7196",
+    "LONGITUDE": "-84.0104"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "198",
+    "Company": "City of Rochelle",
+    "CompanySort": "ROCHELLE",
+    "GMADIST": 9,
+    "LATITUDE": "31.9488",
+    "LONGITUDE": "-83.4569"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "199",
+    "Company": "City of Rockmart",
+    "CompanySort": "ROCKMART",
+    "GMADIST": 1,
+    "LATITUDE": "34.0103",
+    "LONGITUDE": "-85.0442"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62807",
+    "Company": "Town of Rocky Ford",
+    "CompanySort": "ROCKY FORD",
+    "GMADIST": 12,
+    "LATITUDE": "32.6637",
+    "LONGITUDE": "-81.8297"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "200",
+    "Company": "City of Rome",
+    "CompanySort": "ROME",
+    "GMADIST": 1,
+    "LATITUDE": "34.2658",
+    "LONGITUDE": "-85.186"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63280",
+    "Company": "City of Roopville",
+    "CompanySort": "ROOPVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.4566",
+    "LONGITUDE": "-85.1304"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "203",
+    "Company": "City of Rossville",
+    "CompanySort": "ROSSVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.9747",
+    "LONGITUDE": "-85.2897"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "204",
+    "Company": "City of Roswell",
+    "CompanySort": "ROSWELL",
+    "GMADIST": 3,
+    "LATITUDE": "34.0391",
+    "LONGITUDE": "-84.3512"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "483",
+    "Company": "City of Royston",
+    "CompanySort": "ROYSTON",
+    "GMADIST": 2,
+    "LATITUDE": "34.2859",
+    "LONGITUDE": "-83.1097"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "484",
+    "Company": "City of Rutledge",
+    "CompanySort": "RUTLEDGE",
+    "GMADIST": 5,
+    "LATITUDE": "33.6263",
+    "LONGITUDE": "-83.6113"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "486",
+    "Company": "City of Sale City",
+    "CompanySort": "SALE CITY",
+    "GMADIST": 10,
+    "LATITUDE": "31.2626",
+    "LONGITUDE": "-84.0214"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "206",
+    "Company": "City of Sandersville",
+    "CompanySort": "SANDERSVILLE",
+    "GMADIST": 7,
+    "LATITUDE": "32.9827",
+    "LONGITUDE": "-82.8093"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "77685",
+    "Company": "City of Sandy Springs",
+    "CompanySort": "SANDY SPRINGS",
+    "GMADIST": 3,
+    "LATITUDE": "33.9367",
+    "LONGITUDE": "-84.3703"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63268",
+    "Company": "City of Santa Claus",
+    "CompanySort": "SANTA CLAUS",
+    "GMADIST": 9,
+    "LATITUDE": "32.1713",
+    "LONGITUDE": "-82.3297"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "487",
+    "Company": "City of Sardis",
+    "CompanySort": "SARDIS",
+    "GMADIST": 7,
+    "LATITUDE": "32.9756",
+    "LONGITUDE": "-81.7621"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "488",
+    "Company": "Town of Sasser",
+    "CompanySort": "SASSER",
+    "GMADIST": 10,
+    "LATITUDE": "31.7199",
+    "LONGITUDE": "-84.3478"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "489",
+    "Company": "City of Savannah",
+    "CompanySort": "SAVANNAH",
+    "GMADIST": 12,
+    "LATITUDE": "32.1661",
+    "LONGITUDE": "-81.2944"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "490",
+    "Company": "City of Scotland",
+    "CompanySort": "SCOTLAND",
+    "GMADIST": 9,
+    "LATITUDE": "32.0472",
+    "LONGITUDE": "-82.8181"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "491",
+    "Company": "City of Screven",
+    "CompanySort": "SCREVEN",
+    "GMADIST": 9,
+    "LATITUDE": "31.484",
+    "LONGITUDE": "-82.0171"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "207",
+    "Company": "City of Senoia",
+    "CompanySort": "SENOIA",
+    "GMADIST": 4,
+    "LATITUDE": "33.3093",
+    "LONGITUDE": "-84.5547"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "568",
+    "Company": "City of Shady Dale",
+    "CompanySort": "SHADY DALE",
+    "GMADIST": 5,
+    "LATITUDE": "33.4008",
+    "LONGITUDE": "-83.5881"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "492",
+    "Company": "City of Sharon",
+    "CompanySort": "SHARON",
+    "GMADIST": 7,
+    "LATITUDE": "33.5601",
+    "LONGITUDE": "-82.795"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "561",
+    "Company": "Town of Sharpsburg",
+    "CompanySort": "SHARPSBURG",
+    "GMADIST": 4,
+    "LATITUDE": "33.3372",
+    "LONGITUDE": "-84.6505"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "493",
+    "Company": "City of Shellman",
+    "CompanySort": "SHELLMAN",
+    "GMADIST": 8,
+    "LATITUDE": "31.7571",
+    "LONGITUDE": "-84.6159"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "494",
+    "Company": "City of Shiloh",
+    "CompanySort": "SHILOH",
+    "GMADIST": 8,
+    "LATITUDE": "32.812",
+    "LONGITUDE": "-84.699"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "495",
+    "Company": "Town of Siloam",
+    "CompanySort": "SILOAM",
+    "GMADIST": 5,
+    "LATITUDE": "33.5366",
+    "LONGITUDE": "-83.0812"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "208",
+    "Company": "City of Sky Valley",
+    "CompanySort": "SKY VALLEY",
+    "GMADIST": 2,
+    "LATITUDE": "34.9841",
+    "LONGITUDE": "-83.3314"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "308",
+    "Company": "City of Smithville",
+    "CompanySort": "SMITHVILLE",
+    "GMADIST": 10,
+    "LATITUDE": "31.9013",
+    "LONGITUDE": "-84.2552"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "209",
+    "Company": "City of Smyrna",
+    "CompanySort": "SMYRNA",
+    "GMADIST": 3,
+    "LATITUDE": "33.8634",
+    "LONGITUDE": "-84.5167"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "211",
+    "Company": "City of Snellville",
+    "CompanySort": "SNELLVILLE",
+    "GMADIST": 3,
+    "LATITUDE": "33.856",
+    "LONGITUDE": "-84.0039"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "212",
+    "Company": "City of Social Circle",
+    "CompanySort": "SOCIAL CIRCLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.6513",
+    "LONGITUDE": "-83.7117"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "213",
+    "Company": "City of Soperton",
+    "CompanySort": "SOPERTON",
+    "GMADIST": 9,
+    "LATITUDE": "32.3782",
+    "LONGITUDE": "-82.5944"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "102350",
+    "Company": "City of South Fulton",
+    "CompanySort": "SOUTH FULTON",
+    "GMADIST": 3,
+    "LATITUDE": "33.59259",
+    "LONGITUDE": "-84.672938"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "496",
+    "Company": "Town of Sparks",
+    "CompanySort": "SPARKS",
+    "GMADIST": 11,
+    "LATITUDE": "31.1693",
+    "LONGITUDE": "-83.4405"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "309",
+    "Company": "City of Sparta",
+    "CompanySort": "SPARTA",
+    "GMADIST": 7,
+    "LATITUDE": "33.2767",
+    "LONGITUDE": "-82.9706"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "215",
+    "Company": "City of Springfield",
+    "CompanySort": "SPRINGFIELD",
+    "GMADIST": 12,
+    "LATITUDE": "32.3642",
+    "LONGITUDE": "-81.3079"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "485",
+    "Company": "City of St. Marys",
+    "CompanySort": "ST. MARYS",
+    "GMADIST": 12,
+    "LATITUDE": "30.7567",
+    "LONGITUDE": "-81.5722"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "497",
+    "Company": "City of Stapleton",
+    "CompanySort": "STAPLETON",
+    "GMADIST": 7,
+    "LATITUDE": "33.2169",
+    "LONGITUDE": "-82.4672"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "216",
+    "Company": "City of Statesboro",
+    "CompanySort": "STATESBORO",
+    "GMADIST": 12,
+    "LATITUDE": "32.4376",
+    "LONGITUDE": "-81.775"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "310",
+    "Company": "City of Statham",
+    "CompanySort": "STATHAM",
+    "GMADIST": 5,
+    "LATITUDE": "33.9646",
+    "LONGITUDE": "-83.6024"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "498",
+    "Company": "City of Stillmore",
+    "CompanySort": "STILLMORE",
+    "GMADIST": 9,
+    "LATITUDE": "32.441",
+    "LONGITUDE": "-82.2145"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "217",
+    "Company": "City of Stockbridge",
+    "CompanySort": "STOCKBRIDGE",
+    "GMADIST": 3,
+    "LATITUDE": "33.5429",
+    "LONGITUDE": "-84.2621"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "218",
+    "Company": "City of Stone Mountain",
+    "CompanySort": "STONE MOUNTAIN",
+    "GMADIST": 3,
+    "LATITUDE": "33.8035",
+    "LONGITUDE": "-84.1723"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "102343",
+    "Company": "City of Stonecrest",
+    "CompanySort": "STONECREST",
+    "GMADIST": 3,
+    "LATITUDE": "33.701111",
+    "LONGITUDE": "-84.171944"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "311",
+    "Company": "City of Sugar Hill",
+    "CompanySort": "SUGAR HILL",
+    "GMADIST": 3,
+    "LATITUDE": "34.1004",
+    "LONGITUDE": "-84.044"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63270",
+    "Company": "City of Summertown",
+    "CompanySort": "SUMMERTOWN",
+    "GMADIST": 9,
+    "LATITUDE": "32.7458",
+    "LONGITUDE": "-82.2764"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "219",
+    "Company": "City of Summerville",
+    "CompanySort": "SUMMERVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.4788",
+    "LONGITUDE": "-85.3491"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "499",
+    "Company": "Town of Sumner",
+    "CompanySort": "SUMNER",
+    "GMADIST": 10,
+    "LATITUDE": "31.5103",
+    "LONGITUDE": "-83.7368"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "500",
+    "Company": "Town of Surrency",
+    "CompanySort": "SURRENCY",
+    "GMADIST": 9,
+    "LATITUDE": "31.7216",
+    "LONGITUDE": "-82.1987"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "312",
+    "Company": "City of Suwanee",
+    "CompanySort": "SUWANEE",
+    "GMADIST": 3,
+    "LATITUDE": "34.0506",
+    "LONGITUDE": "-84.0687"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "220",
+    "Company": "City of Swainsboro",
+    "CompanySort": "SWAINSBORO",
+    "GMADIST": 9,
+    "LATITUDE": "32.5866",
+    "LONGITUDE": "-82.3345"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "501",
+    "Company": "City of Sycamore",
+    "CompanySort": "SYCAMORE",
+    "GMADIST": 11,
+    "LATITUDE": "31.6711",
+    "LONGITUDE": "-83.6351"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "502",
+    "Company": "City of Sylvania",
+    "CompanySort": "SYLVANIA",
+    "GMADIST": 12,
+    "LATITUDE": "32.7465",
+    "LONGITUDE": "-81.641"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "222",
+    "Company": "City of Sylvester",
+    "CompanySort": "SYLVESTER",
+    "GMADIST": 10,
+    "LATITUDE": "31.53",
+    "LONGITUDE": "-83.8338"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "313",
+    "Company": "City of Talbotton",
+    "CompanySort": "TALBOTTON",
+    "GMADIST": 8,
+    "LATITUDE": "32.6773",
+    "LONGITUDE": "-84.5406"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "555",
+    "Company": "Town of Talking Rock",
+    "CompanySort": "TALKING ROCK",
+    "GMADIST": 1,
+    "LATITUDE": "34.5277",
+    "LONGITUDE": "-84.4941"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "223",
+    "Company": "City of Tallapoosa",
+    "CompanySort": "TALLAPOOSA",
+    "GMADIST": 1,
+    "LATITUDE": "33.7335",
+    "LONGITUDE": "-85.2858"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "503",
+    "Company": "Town of Tallulah Falls",
+    "CompanySort": "TALLULAH FALLS",
+    "GMADIST": 2,
+    "LATITUDE": "34.7258",
+    "LONGITUDE": "-83.3817"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "61740",
+    "Company": "City of Talmo",
+    "CompanySort": "TALMO",
+    "GMADIST": 5,
+    "LATITUDE": "34.1842",
+    "LONGITUDE": "-83.7174"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63245",
+    "Company": "City of Tarrytown",
+    "CompanySort": "TARRYTOWN",
+    "GMADIST": 9,
+    "LATITUDE": "32.3187",
+    "LONGITUDE": "-82.5596"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63247",
+    "Company": "City of Taylorsville",
+    "CompanySort": "TAYLORSVILLE",
+    "GMADIST": 1,
+    "LATITUDE": "34.086",
+    "LONGITUDE": "-84.9876"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "225",
+    "Company": "City of Temple",
+    "CompanySort": "TEMPLE",
+    "GMADIST": 4,
+    "LATITUDE": "33.7342",
+    "LONGITUDE": "-85.0289"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "226",
+    "Company": "City of Tennille",
+    "CompanySort": "TENNILLE",
+    "GMADIST": 7,
+    "LATITUDE": "32.9359",
+    "LONGITUDE": "-82.8135"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "227",
+    "Company": "City of Thomaston",
+    "CompanySort": "THOMASTON",
+    "GMADIST": 4,
+    "LATITUDE": "32.8908",
+    "LONGITUDE": "-84.3271"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "504",
+    "Company": "City of Thomasville",
+    "CompanySort": "THOMASVILLE",
+    "GMADIST": 10,
+    "LATITUDE": "30.8394",
+    "LONGITUDE": "-83.9782"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "228",
+    "Company": "City of Thomson",
+    "CompanySort": "THOMSON",
+    "GMADIST": 7,
+    "LATITUDE": "33.4667",
+    "LONGITUDE": "-82.4993"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "229",
+    "Company": "Town of Thunderbolt",
+    "CompanySort": "THUNDERBOLT",
+    "GMADIST": 12,
+    "LATITUDE": "32.034",
+    "LONGITUDE": "-81.0478"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "230",
+    "Company": "City of Tifton",
+    "CompanySort": "TIFTON",
+    "GMADIST": 11,
+    "LATITUDE": "31.4625",
+    "LONGITUDE": "-83.5206"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "62771",
+    "Company": "Town of Tiger",
+    "CompanySort": "TIGER",
+    "GMADIST": 2,
+    "LATITUDE": "34.8458",
+    "LONGITUDE": "-83.4331"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "505",
+    "Company": "Town of Tignall",
+    "CompanySort": "TIGNALL",
+    "GMADIST": 7,
+    "LATITUDE": "33.8674",
+    "LONGITUDE": "-82.742"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "231",
+    "Company": "City of Toccoa",
+    "CompanySort": "TOCCOA",
+    "GMADIST": 2,
+    "LATITUDE": "34.5807",
+    "LONGITUDE": "-83.3258"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "506",
+    "Company": "Town of Toomsboro",
+    "CompanySort": "TOOMSBORO",
+    "GMADIST": 6,
+    "LATITUDE": "32.8224",
+    "LONGITUDE": "-83.0826"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "314",
+    "Company": "City of Trenton",
+    "CompanySort": "TRENTON",
+    "GMADIST": 1,
+    "LATITUDE": "34.8741",
+    "LONGITUDE": "-85.5096"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "234",
+    "Company": "Town of Trion",
+    "CompanySort": "TRION",
+    "GMADIST": 1,
+    "LATITUDE": "34.5479",
+    "LONGITUDE": "-85.3108"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "99965",
+    "Company": "City of Tucker",
+    "CompanySort": "TUCKER",
+    "GMADIST": 3,
+    "LATITUDE": "33.843414",
+    "LONGITUDE": "-84.201886"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "507",
+    "Company": "City of Tunnel Hill",
+    "CompanySort": "TUNNEL HILL",
+    "GMADIST": 1,
+    "LATITUDE": "34.8478",
+    "LONGITUDE": "-85.0406"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "508",
+    "Company": "Town of Turin",
+    "CompanySort": "TURIN",
+    "GMADIST": 4,
+    "LATITUDE": "33.326",
+    "LONGITUDE": "-84.6371"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "315",
+    "Company": "City of Twin City",
+    "CompanySort": "TWIN CITY",
+    "GMADIST": 9,
+    "LATITUDE": "32.5829",
+    "LONGITUDE": "-82.1575"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "509",
+    "Company": "City of Ty Ty",
+    "CompanySort": "TY TY",
+    "GMADIST": 11,
+    "LATITUDE": "31.472",
+    "LONGITUDE": "-83.6509"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "236",
+    "Company": "City of Tybee Island",
+    "CompanySort": "TYBEE ISLAND",
+    "GMADIST": 12,
+    "LATITUDE": "32.0105",
+    "LONGITUDE": "-80.8525"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "237",
+    "Company": "Town of Tyrone",
+    "CompanySort": "TYRONE",
+    "GMADIST": 3,
+    "LATITUDE": "33.4751",
+    "LONGITUDE": "-84.5942"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "332",
+    "Company": "City of Unadilla",
+    "CompanySort": "UNADILLA",
+    "GMADIST": 8,
+    "LATITUDE": "32.2583",
+    "LONGITUDE": "-83.7356"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "238",
+    "Company": "City of Union City",
+    "CompanySort": "UNION CITY",
+    "GMADIST": 3,
+    "LATITUDE": "33.594",
+    "LONGITUDE": "-84.5631"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "239",
+    "Company": "City of Union Point",
+    "CompanySort": "UNION POINT",
+    "GMADIST": 5,
+    "LATITUDE": "33.6178",
+    "LONGITUDE": "-83.0756"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "531",
+    "Company": "City of Uvalda",
+    "CompanySort": "UVALDA",
+    "GMADIST": 9,
+    "LATITUDE": "32.0371",
+    "LONGITUDE": "-82.508"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "240",
+    "Company": "City of Valdosta",
+    "CompanySort": "VALDOSTA",
+    "GMADIST": 11,
+    "LATITUDE": "30.8502",
+    "LONGITUDE": "-83.2789"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "510",
+    "Company": "City of Varnell",
+    "CompanySort": "VARNELL",
+    "GMADIST": 1,
+    "LATITUDE": "34.8929",
+    "LONGITUDE": "-84.9649"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63281",
+    "Company": "City of Vernonburg",
+    "CompanySort": "VERNONBURG",
+    "GMADIST": 12,
+    "LATITUDE": "31.961",
+    "LONGITUDE": "-81.127"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "242",
+    "Company": "City of Vidalia",
+    "CompanySort": "VIDALIA",
+    "GMADIST": 9,
+    "LATITUDE": "32.2134",
+    "LONGITUDE": "-82.4035"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "63282",
+    "Company": "City of Vidette",
+    "CompanySort": "VIDETTE",
+    "GMADIST": 7,
+    "LATITUDE": "33.0376",
+    "LONGITUDE": "-82.2474"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "244",
+    "Company": "City of Vienna",
+    "CompanySort": "VIENNA",
+    "GMADIST": 8,
+    "LATITUDE": "32.0925",
+    "LONGITUDE": "-83.7865"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "245",
+    "Company": "City of Villa Rica",
+    "CompanySort": "VILLA RICA",
+    "GMADIST": 4,
+    "LATITUDE": "33.7305",
+    "LONGITUDE": "-84.917"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "61999",
+    "Company": "City of Waco",
+    "CompanySort": "WACO",
+    "GMADIST": 1,
+    "LATITUDE": "33.7026",
+    "LONGITUDE": "-85.1892"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "247",
+    "Company": "City of Wadley",
+    "CompanySort": "WADLEY",
+    "GMADIST": 7,
+    "LATITUDE": "32.8663",
+    "LONGITUDE": "-82.4014"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "248",
+    "Company": "City of Waleska",
+    "CompanySort": "WALESKA",
+    "GMADIST": 3,
+    "LATITUDE": "34.317",
+    "LONGITUDE": "-84.5505"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "511",
+    "Company": "City of Walnut Grove",
+    "CompanySort": "WALNUT GROVE",
+    "GMADIST": 5,
+    "LATITUDE": "33.7454",
+    "LONGITUDE": "-83.8503"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "249",
+    "Company": "City of Walthourville",
+    "CompanySort": "WALTHOURVILLE",
+    "GMADIST": 12,
+    "LATITUDE": "31.7716",
+    "LONGITUDE": "-81.6217"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "252",
+    "Company": "City of Warm Springs",
+    "CompanySort": "WARM SPRINGS",
+    "GMADIST": 4,
+    "LATITUDE": "32.8852",
+    "LONGITUDE": "-84.6766"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "253",
+    "Company": "City of Warner Robins",
+    "CompanySort": "WARNER ROBINS",
+    "GMADIST": 6,
+    "LATITUDE": "32.598",
+    "LONGITUDE": "-83.6527"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "254",
+    "Company": "City of Warrenton",
+    "CompanySort": "WARRENTON",
+    "GMADIST": 7,
+    "LATITUDE": "33.4067",
+    "LONGITUDE": "-82.6653"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "512",
+    "Company": "City of Warwick",
+    "CompanySort": "WARWICK",
+    "GMADIST": 10,
+    "LATITUDE": "31.8298",
+    "LONGITUDE": "-83.9206"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "256",
+    "Company": "City of Washington",
+    "CompanySort": "WASHINGTON",
+    "GMADIST": 7,
+    "LATITUDE": "33.7355",
+    "LONGITUDE": "-82.7426"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "513",
+    "Company": "City of Watkinsville",
+    "CompanySort": "WATKINSVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.8612",
+    "LONGITUDE": "-83.4073"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "514",
+    "Company": "Town of Waverly Hall",
+    "CompanySort": "WAVERLY HALL",
+    "GMADIST": 8,
+    "LATITUDE": "32.6837",
+    "LONGITUDE": "-84.7378"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "258",
+    "Company": "City of Waycross",
+    "CompanySort": "WAYCROSS",
+    "GMADIST": 11,
+    "LATITUDE": "31.2109",
+    "LONGITUDE": "-82.3579"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "260",
+    "Company": "City of Waynesboro",
+    "CompanySort": "WAYNESBORO",
+    "GMADIST": 7,
+    "LATITUDE": "33.0909",
+    "LONGITUDE": "-82.0146"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "317",
+    "Company": "City of West Point",
+    "CompanySort": "WEST POINT",
+    "GMADIST": 4,
+    "LATITUDE": "32.8949",
+    "LONGITUDE": "-85.1458"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "515",
+    "Company": "City of Whigham",
+    "CompanySort": "WHIGHAM",
+    "GMADIST": 10,
+    "LATITUDE": "30.8845",
+    "LONGITUDE": "-84.3247"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "261",
+    "Company": "City of White",
+    "CompanySort": "WHITE",
+    "GMADIST": 1,
+    "LATITUDE": "34.2824",
+    "LONGITUDE": "-84.7472"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "516",
+    "Company": "Town of White Plains",
+    "CompanySort": "WHITE PLAINS",
+    "GMADIST": 5,
+    "LATITUDE": "33.4806",
+    "LONGITUDE": "-83.0372"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "262",
+    "Company": "City of Whitesburg",
+    "CompanySort": "WHITESBURG",
+    "GMADIST": 4,
+    "LATITUDE": "33.4928",
+    "LONGITUDE": "-84.9137"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "517",
+    "Company": "City of Willacoochee",
+    "CompanySort": "WILLACOOCHEE",
+    "GMADIST": 11,
+    "LATITUDE": "31.3359",
+    "LONGITUDE": "-83.0446"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "518",
+    "Company": "City of Williamson",
+    "CompanySort": "WILLIAMSON",
+    "GMADIST": 4,
+    "LATITUDE": "33.1782",
+    "LONGITUDE": "-84.36"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "263",
+    "Company": "City of Winder",
+    "CompanySort": "WINDER",
+    "GMADIST": 5,
+    "LATITUDE": "33.9918",
+    "LONGITUDE": "-83.7217"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "519",
+    "Company": "City of Winterville",
+    "CompanySort": "WINTERVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.9666",
+    "LONGITUDE": "-83.2815"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "264",
+    "Company": "City of Woodbine",
+    "CompanySort": "WOODBINE",
+    "GMADIST": 12,
+    "LATITUDE": "30.9595",
+    "LONGITUDE": "-81.7175"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "265",
+    "Company": "City of Woodbury",
+    "CompanySort": "WOODBURY",
+    "GMADIST": 4,
+    "LATITUDE": "32.9848",
+    "LONGITUDE": "-84.5821"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "520",
+    "Company": "City of Woodland",
+    "CompanySort": "WOODLAND",
+    "GMADIST": 8,
+    "LATITUDE": "32.7877",
+    "LONGITUDE": "-84.5606"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "521",
+    "Company": "City of Woodstock",
+    "CompanySort": "WOODSTOCK",
+    "GMADIST": 3,
+    "LATITUDE": "34.1027",
+    "LONGITUDE": "-84.5086"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "522",
+    "Company": "City of Woodville",
+    "CompanySort": "WOODVILLE",
+    "GMADIST": 5,
+    "LATITUDE": "33.6714",
+    "LONGITUDE": "-83.1063"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "544",
+    "Company": "Town of Woolsey",
+    "CompanySort": "WOOLSEY",
+    "GMADIST": 3,
+    "LATITUDE": "33.3626",
+    "LONGITUDE": "-84.4113"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "266",
+    "Company": "City of Wrens",
+    "CompanySort": "WRENS",
+    "GMADIST": 7,
+    "LATITUDE": "33.207",
+    "LONGITUDE": "-82.3878"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "319",
+    "Company": "City of Wrightsville",
+    "CompanySort": "WRIGHTSVILLE",
+    "GMADIST": 9,
+    "LATITUDE": "32.7265",
+    "LONGITUDE": "-82.7197"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "569",
+    "Company": "Town of Yatesville",
+    "CompanySort": "YATESVILLE",
+    "GMADIST": 4,
+    "LATITUDE": "32.9133",
+    "LONGITUDE": "-84.1423"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "523",
+    "Company": "City of Young Harris",
+    "CompanySort": "YOUNG HARRIS",
+    "GMADIST": 2,
+    "LATITUDE": "34.9356",
+    "LONGITUDE": "-83.8471"
+  },
+  {
+    "$type": "System.Dynamic.ExpandoObject, System.Core",
+    "ID": "524",
+    "Company": "City of Zebulon",
+    "CompanySort": "ZEBULON",
+    "GMADIST": 4,
+    "LATITUDE": "33.0944",
+    "LONGITUDE": "-84.3424"
+  }
+]

@@ -42,3 +42,4 @@ next-env.d.ts
 app/activities/route.ts
 public/data
 app/data
+.env 

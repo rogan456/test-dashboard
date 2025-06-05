@@ -45,8 +45,8 @@ export default function ActivitiesClient() {
 }, [dateFilter, customDateRange]);
   // Fetch data when date filter changes
   useEffect(() => {
-  console.log('useEffect running', startDate, endDate);
   if (!startDate || !endDate) return;
+  setRowData([]);
   startTransition(() => {
     fetch('/api/activities', { // <-- FIXED HERE
       method: 'POST',
@@ -62,10 +62,9 @@ export default function ActivitiesClient() {
         const mapped = rawItems.map((item: any) => ({
           ActivityDate: item.ActivityDate ?? '',
           ActivityType: item.ActivityType ?? '',
-          CityName: item.CityName ?? '',
           Notes: item.Notes ?? '',
           StaffInvolved: item.StaffInvolved ?? '',
-          CityId: item.CityId,
+          CityId: String(item.CityId) ?? '',
           CitySort: item.CitySort ?? '',
           EnteredByStaffName: item.EnteredByStaffName ?? '',
           Population: item.Population ?? '',
@@ -79,7 +78,7 @@ export default function ActivitiesClient() {
   // Apply other filters to the fetched data
   const filteredData = rowData.filter(row => {
     const districtMatch = !districtFilter.length || districtFilter.includes(String(row.District));
-    const cityMatch = !cityFilter.length || cityFilter.includes(String(row.CityId));
+    const cityMatch = !cityFilter.length || cityFilter.includes(row.CityId);
     const activityMatch = !activityTypeFilter.length || activityTypeFilter.includes(row.ActivityType.toLowerCase());
     let dateMatch = true;
     if (startDate) {
@@ -100,6 +99,16 @@ export default function ActivitiesClient() {
   const citiesEngaged = uniqueCityIds.length;
   const citiesNotEngaged = TOTAL_CITIES - citiesEngaged;
   const totalEngagement = ((citiesEngaged / TOTAL_CITIES) * 100).toFixed(1) + '%';
+  const cityActivityCounts = Object.values(
+    filteredData.reduce((acc, row) => {
+      const key = row.CitySort;
+      if (!acc[key]) {
+        acc[key] = { CitySort: row.CitySort, count: 0, Population: row.Population }; 
+      }
+      acc[key].count += 1;
+      return acc;
+    }, {} as Record<string, { CitySort: string; count: number; Population?: string }>)
+  ) as { CitySort: string; count: number; Population?: string }[];
 
   return (
   <div className="px-6 py-6 flex flex-col gap-6">
@@ -115,13 +124,13 @@ export default function ActivitiesClient() {
       customDateRange={customDateRange}
       setCustomDateRange={setCustomDateRange}
     />
-    {isPending && rowData.length === 0 ? (
-      <div className="text-center py-10 text-lg font-semibold">Loading...</div>
+    {isPending  ? (
+      <div className="text-center py-10 text-lg font-semibold">Gathering data...</div>
     ) : (
       <div className={isPending ? "pointer-events-none blur-sm opacity-90 transition-all" : ""}>
         <div className="flex flex-col lg:flex-row gap-6">
-          <div className="w-full lg:w-1/2">
-            <GeorgiaMap activityData={filteredData} />
+          <div className="border w-full lg:w-1/2">
+            <GeorgiaMap cityActivityData={cityActivityCounts.map(({ CitySort, count, Population }) => ({CityName: CitySort, count,Population}))} />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
             <div className="flex gap-4 w-full items-center">
