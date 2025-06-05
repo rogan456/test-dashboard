@@ -37,6 +37,8 @@ export async function fetchActivities(startDate: string, endDate: string) {
   let allRows: any[] = [];
   const startTime = Date.now();
   const rt = process.env.IMIS_RT;
+
+  
   while (true) {
     const raw = `{
       "queryName": "$/GMA/API-IMIS/Research/Internal Dashboard/GMA Activities&Date=\\"${startDate}\\",\\"${endDate}\\"",
