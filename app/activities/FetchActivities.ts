@@ -6,7 +6,7 @@
     "queryName": "$/GMA/API-IMIS/Research/Internal Dashboard/GMA Activities",
     "limit": 600,
     "offset": 0,
-    "rt":  "d49^%Ygur!7Y9BLD"
+    
   }`;
 
   const requestOptions: RequestInit = {
@@ -38,7 +38,7 @@ export async function fetchActivities(startDate: string, endDate: string) {
   const startTime = Date.now();
   const rt = process.env.IMIS_RT;
 
-  
+
   while (true) {
     const raw = `{
       "queryName": "$/GMA/API-IMIS/Research/Internal Dashboard/GMA Activities&Date=\\"${startDate}\\",\\"${endDate}\\"",
