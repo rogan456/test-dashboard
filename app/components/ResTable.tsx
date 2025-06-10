@@ -9,6 +9,7 @@ type RowData = {
   StaffInvolved: string;
   CitySort: string;
   EnteredByStaffName: string;
+  Population?: string;
 };
 
 function CollapsibleRow({ row }: { row: RowData }) {
@@ -37,16 +38,17 @@ function CollapsibleRow({ row }: { row: RowData }) {
           </button>
         </td>
         <td className="p-2 break-words">
-  {new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: '2-digit',
-  }).format(new Date(row.ActivityDate))}
-</td>
+            {new Intl.DateTimeFormat('en-US', {
+              year: 'numeric',
+              month: 'short',
+              day: '2-digit',
+            }).format(new Date(row.ActivityDate))}
+          </td>
 
         <td className="p-2 break-words">{row.ActivityType}</td>
         <td className="p-2 break-words">{row.EnteredByStaffName}</td>
         <td className="p-2 break-words">{row.CitySort ? row.CitySort.charAt(0).toUpperCase() + row.CitySort.slice(1).toLowerCase(): ''}</td>
+        <td className="p-2 break-words">{row.Population}</td>
       </tr>
       {open && (
         <tr className="bg-blue-50 rounded-b-lg">
@@ -92,7 +94,8 @@ export default function CollapsibleTable({ data = [] }: { data?: RowData[] }) {
             <th className="p-2 text-left">Date</th>
             <th className="p-2 text-left">Activity Type</th>
             <th className="p-2 text-left">Entered By</th>
-            <th className="p-2 text-left rounded-tr-2xl">Location</th>
+            <th className="p-2 text-left ">Location</th>
+            <th className="p-2 text-left rounded-tr-2xl">Population</th>
           </tr>
         </thead>
         <tbody>

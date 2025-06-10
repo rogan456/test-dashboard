@@ -2,7 +2,6 @@
 import { TrashIcon } from '@heroicons/react/24/outline';
 import React, { useMemo, useEffect } from 'react';
 import Select from 'react-select';
-import DiscreteSliderLabel from './PopSlider';
 import cities from '../data/cities.json';
 import dist from '../data/dist.json';
 
@@ -51,6 +50,17 @@ const dateOptions = [
   { value: 'Custom', label: 'All Custom' },
 ];
 
+const popOptions = [
+  { value: 'lt500', label: 'Less than 500' },
+  { value: '500to999', label: '500 - 999' },
+  { value: '1000to2499', label: '1,000 - 2,499' },
+  { value: '2500to4999', label: '2,500 - 2,999' },
+  { value: '5000to9999', label: '5,000 - 9,999' },
+  { value: '10000to24999', label: '10,000 - 24,999' },
+  { value: '25000to49999', label: '25,000 - 49,999' },
+  { value: '50000plus', label: '50,000+' },
+];
+
 interface FilterBarProps {
   showActivityType?: boolean;
   cityFilter: string[];
@@ -63,6 +73,8 @@ interface FilterBarProps {
   setDateFilter: (val: string) => void;
   customDateRange: { start: string; end: string };
   setCustomDateRange: (range: { start: string; end: string }) => void;
+   populationFilter: string[];
+  setPopulationFilter: (pop: string[]) => void;
 }
 
 const FilterBar: React.FC<FilterBarProps> = ({
@@ -77,9 +89,11 @@ const FilterBar: React.FC<FilterBarProps> = ({
   setDateFilter,
   customDateRange,
   setCustomDateRange,
+  populationFilter,
+  setPopulationFilter,
 }) => {
   // Filter city options based on selected district(s)
-  const filteredCityOptions = useMemo(() => {
+  {/*const filteredCityOptions = useMemo(() => {
     if (!districtFilter.length) return cityOptions;
     const allowedCityIds = districtOptions
       .filter(d => districtFilter.includes(d.value))
@@ -123,7 +137,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
         filteredDistrictOptions.some(opt => opt.value === districtId)
       ));
     }
-  }, [cityFilter, districtFilter, filteredDistrictOptions, setDistrictFilter]);
+  }, [cityFilter, districtFilter, filteredDistrictOptions, setDistrictFilter]);*/}
 
   const handleReset = () => {
     setCityFilter([]);
@@ -131,6 +145,7 @@ const FilterBar: React.FC<FilterBarProps> = ({
     setDistrictFilter([]);
     setDateFilter('last30days');
     setCustomDateRange({ start: '', end: '' });
+    setPopulationFilter([]);
   };
 
   return (
@@ -138,9 +153,9 @@ const FilterBar: React.FC<FilterBarProps> = ({
       <div className="border rounded flex-1 min-w-[140px] max-w-xs">
         <Select
           instanceId="district-select"
-          options={filteredDistrictOptions}
+          options={districtOptions}
           placeholder="District"
-          value={filteredDistrictOptions.filter(opt => districtFilter.includes(opt.value))}
+          value={districtOptions.filter(opt => districtFilter.includes(opt.value))}
           onChange={selected => setDistrictFilter(selected ? selected.map((s: any) => s.value) : [])}
           isClearable
           isMulti
@@ -149,9 +164,9 @@ const FilterBar: React.FC<FilterBarProps> = ({
       <div className="border rounded flex-1 min-w-[140px] max-w-xs">
         <Select
           instanceId="city-select"
-          options={filteredCityOptions}
+          options={cityOptions}
           placeholder="City"
-          value={filteredCityOptions.filter(opt => cityFilter.includes(opt.value))}
+          value={cityOptions.filter(opt => cityFilter.includes(opt.value))}
           onChange={selected => setCityFilter(selected ? selected.map((s: any) => s.value) : [])}
           isClearable
           isMulti
@@ -194,8 +209,21 @@ const FilterBar: React.FC<FilterBarProps> = ({
             isClearable
             isMulti
           />
-        </div>
+          </div>
+        
       )}
+        <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+                <Select
+                  instanceId="population-select"
+                  options={popOptions}
+                  placeholder="Population"
+                  value={popOptions.filter(opt => populationFilter.includes(opt.value))}
+                  onChange={selected => setPopulationFilter(selected ? selected.map((s: any) => s.value) : [])}
+                  isClearable
+                  isMulti
+                />
+        </div>
+              
       <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition font-semibold shadow min-w-[100px]">
         Filter
       </button>

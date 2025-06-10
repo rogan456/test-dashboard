@@ -7,8 +7,6 @@ import BlueCard from '../components/BlueCard';
 import BasicSwitches from '../components/Switch';
 import { subDays, subMonths, isAfter, isBefore, parseISO } from 'date-fns';
 
-// Import your API proxy route (recommended) or fetch directly if safe
-// Example: /api/activities (see previous answers for API route setup)
 
 export default function ActivitiesClient() {
   const [rowData, setRowData] = useState<any[]>([]);
@@ -19,7 +17,12 @@ export default function ActivitiesClient() {
   const [customDateRange, setCustomDateRange] = useState<{ start: string; end: string }>({ start: '', end: '' });
   const [isPending, startTransition] = useTransition();
   const [flipped, setFlipped] = useState(false);
+  //const [zoomToCity, setZoomToCity] = useState<string[]>([]);
+  const [zoomToCities, setZoomToCities] = useState<string[]>([]);
+  const [populationFilter, setPopulationFilter] = useState<string[]>([]);
 
+
+  //const handleReset = () => setZoomToCity(null);
   const { startDate, endDate } = useMemo(() => {
   const now = new Date();
   let startDate: Date | null = null;
@@ -77,22 +80,43 @@ export default function ActivitiesClient() {
 
   // Apply other filters to the fetched data
   const filteredData = rowData.filter(row => {
-    const districtMatch = !districtFilter.length || districtFilter.includes(String(row.District));
-    const cityMatch = !cityFilter.length || cityFilter.includes(row.CityId);
-    const activityMatch = !activityTypeFilter.length || activityTypeFilter.includes(row.ActivityType.toLowerCase());
-    let dateMatch = true;
-    if (startDate) {
-      const activityDate = row.ActivityDate ? parseISO(row.ActivityDate) : null;
-      if (activityDate) {
-        if (endDate) {
-          dateMatch = isAfter(activityDate, startDate) && isBefore(activityDate, endDate);
-        } else {
-          dateMatch = isAfter(activityDate, startDate);
-        }
+  const matchesDistrict = districtFilter.length && districtFilter.includes(String(row.District));
+  const matchesCity = cityFilter.length && cityFilter.includes(row.CityId);
+
+  // If either filter is set, match if either matches; if neither is set, show all
+  const passesLocation =
+    (districtFilter.length || cityFilter.length)
+      ? matchesDistrict || matchesCity
+      : true;
+  const popMatch =
+  !populationFilter.length ||
+  populationFilter.some(popRange => {
+    const pop = Number(row.Population);
+    if (popRange === 'lt500') return pop < 500;
+    if (popRange === '500to999') return pop >= 500 && pop <= 999;
+    if (popRange === '1000to2499') return pop >= 1000 && pop <= 2499;
+    if (popRange === '2500to4999') return pop >= 2500 && pop <= 4999;
+    if (popRange === '5000to9999') return pop >= 5000 && pop <= 9999;
+    if (popRange === '10000to24999') return pop >= 10000 && pop <= 24999;
+    if (popRange === '25000to49999') return pop >= 25000 && pop <= 49999;
+    if (popRange === '50000plus') return pop >= 50000;
+    return false;
+  });
+  const activityMatch = !activityTypeFilter.length || activityTypeFilter.includes(row.ActivityType.toLowerCase());
+  let dateMatch = true;
+  if (startDate) {
+    const activityDate = row.ActivityDate ? parseISO(row.ActivityDate) : null;
+    if (activityDate) {
+      if (endDate) {
+        dateMatch = isAfter(activityDate, startDate) && isBefore(activityDate, endDate);
+      } else {
+        dateMatch = isAfter(activityDate, startDate);
       }
     }
-    return districtMatch && cityMatch && activityMatch && dateMatch;
-  });
+  }
+  return passesLocation && activityMatch && dateMatch && popMatch;
+});
+
 
   const TOTAL_CITIES = 536;
   const uniqueCityIds = Array.from(new Set(filteredData.map(row => row.CityId)));
@@ -109,6 +133,33 @@ export default function ActivitiesClient() {
       return acc;
     }, {} as Record<string, { CitySort: string; count: number; Population?: string }>)
   ) as { CitySort: string; count: number; Population?: string }[];
+  const handleCitySelect = (cityName: string) => {
+    const city = rowData.find(row => row.CitySort === cityName );
+    if (city){
+      setCityFilter([city.CityId]);
+    }
+  }
+  {/*useEffect(() => {
+  if (cityFilter.length === 1) {
+    const city = filteredData.find(row => row.CityId === cityFilter[0]);
+    if (city) {
+      setZoomToCity(city.CitySort);
+    }
+  } else {
+    setZoomToCity(null);
+  }
+}, [cityFilter, filteredData.length]);*/}
+useEffect(() => {
+  if (cityFilter.length > 0) {
+    // Find all matching cities in filteredData
+    const cities = filteredData
+      .filter(row => cityFilter.includes(row.CityId))
+      .map(row => row.CitySort);
+    setZoomToCities(cities);
+  } else {
+    setZoomToCities([]);
+  }
+}, [cityFilter, filteredData.length]);
 
   return (
   <div className="px-6 py-6 flex flex-col gap-6">
@@ -123,6 +174,8 @@ export default function ActivitiesClient() {
       setDateFilter={setDateFilter}
       customDateRange={customDateRange}
       setCustomDateRange={setCustomDateRange}
+      populationFilter={populationFilter}
+      setPopulationFilter={setPopulationFilter}
     />
     {isPending  ? (
       <div className="text-center py-10 text-lg font-semibold">Gathering data...</div>
@@ -130,7 +183,15 @@ export default function ActivitiesClient() {
       <div className={isPending ? "pointer-events-none blur-sm opacity-90 transition-all" : ""}>
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="border w-full lg:w-1/2">
-            <GeorgiaMap cityActivityData={cityActivityCounts.map(({ CitySort, count, Population }) => ({CityName: CitySort, count,Population}))} />
+            <GeorgiaMap
+                cityActivityData={cityActivityCounts.map(({ CitySort, count, Population }) => ({
+                  CityName: CitySort,
+                  count,
+                  Population
+                }))}
+                zoomToCities={zoomToCities}
+                onCitySelect={handleCitySelect}
+                />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
             <div className="flex gap-4 w-full items-center">

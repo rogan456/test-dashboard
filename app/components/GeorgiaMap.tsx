@@ -178,13 +178,15 @@ const layers = showCounties
 }
   */}
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import DeckGL from '@deck.gl/react';
 import { GeoJsonLayer, IconLayer } from '@deck.gl/layers';
 import { Map } from 'react-map-gl/maplibre';
 import regionBoundariesData from '../data/Regional_Commission_Boundaries.json';
 import countyBoundariesData from '../data/ARC_CountiesConverted.json';
 import cities from '../data/cities.json';
+import { useMemo } from 'react';
+
 
 const INITIAL_VIEW_STATE = {
   longitude: -83.5,
@@ -214,8 +216,13 @@ const districtBlues = [
 const MAP_STYLE = 'https://basemaps.cartocdn.com/gl/voyager-gl-style/style.json';
 
 type CityActivity = { CityName: string; count: number; Population?: string };
+type GeorgiaMapProps = {
+  cityActivityData?: CityActivity[];
+  zoomToCities?: string[];
+  onCitySelect?: (cityName: string) => void;
+};
 
-export default function GeorgiaMap({ cityActivityData = [] }: { cityActivityData?: CityActivity[] }) {
+export default function GeorgiaMap({ cityActivityData = [], zoomToCities, onCitySelect }: GeorgiaMapProps) {
   const [viewState, setViewState] = useState(INITIAL_VIEW_STATE);
   const [showCounties, setShowCounties] = useState(false);
   const [hoverInfo, setHoverInfo] = useState<any>(null);
@@ -269,6 +276,60 @@ export default function GeorgiaMap({ cityActivityData = [] }: { cityActivityData
     })
     .filter(Boolean);
 
+  
+
+  useEffect(() => {
+    if (!zoomToCities || (Array.isArray(zoomToCities) && zoomToCities.length === 0)) return;
+
+    // Get coordinates for all selected cities
+    const cityNames: string[] = Array.isArray(zoomToCities) ? zoomToCities : [zoomToCities];
+    const coords = cityNames
+      .map((cityName: string) => {
+        const cityInfo = cityCoordMap[cityName.toUpperCase()];
+        if (cityInfo && cityInfo.LATITUDE && cityInfo.LONGITUDE) {
+          return [parseFloat(cityInfo.LONGITUDE), parseFloat(cityInfo.LATITUDE)];
+        }
+        return null;
+      })
+      .filter(Boolean) as [number, number][];
+
+    if (coords.length === 0) return;
+
+    if (coords.length === 1) {
+      setViewState(vs => ({
+        ...vs,
+        longitude: coords[0][0],
+        latitude: coords[0][1],
+        zoom: 10,
+        transitionDuration: 1000
+      }));
+    } else {
+      // Calculate bounding box
+      const lons = coords.map(([lon]) => lon);
+      const lats = coords.map(([, lat]) => lat);
+      const minLon = Math.min(...lons);
+      const maxLon = Math.max(...lons);
+      const minLat = Math.min(...lats);
+      const maxLat = Math.max(...lats);
+      const centerLon = (minLon + maxLon) / 2;
+      const centerLat = (minLat + maxLat) / 2;
+      // Estimate zoom (you can tweak this formula)
+      const lonDiff = Math.abs(maxLon - minLon);
+      const latDiff = Math.abs(maxLat - minLat);
+      const zoom = Math.max(
+        6,
+        8 - Math.max(Math.log2(lonDiff + 0.01), Math.log2(latDiff + 0.01))
+      );
+      setViewState(vs => ({
+        ...vs,
+        longitude: centerLon,
+        latitude: centerLat,
+        zoom,
+        transitionDuration: 1000
+      }));
+    }
+  }, [zoomToCities]);
+
 
 const iconLayer = new IconLayer({
   id: 'icon-layer',
@@ -280,7 +341,12 @@ const iconLayer = new IconLayer({
   iconMapping: 'https://raw.githubusercontent.com/visgl/deck.gl-data/master/website/icon-atlas.json',
   getColor: [0, 99, 255, 200],
   pickable: true,
-  onHover: setHoverInfo
+  onHover: setHoverInfo,
+  onClick: info => {
+    if (info.object && typeof onCitySelect === 'function') {
+      onCitySelect(info.object.name); // name is CitySort
+    }
+  }
 });
 
 
