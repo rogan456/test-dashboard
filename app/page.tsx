@@ -1,9 +1,9 @@
 'use client';
 import React, { useState } from 'react';
-import GeorgiaMap from './components/GeorgiaMap';
+import GeorgiaMap from './components/ActGeorgiaMap';
 import BlueCard from './components/BlueCard';
 import Link from 'next/link';
-import FilterBar from './components/FilterBar';
+import FilterBar from './components/ActivitiesFilterBar';
 import GenStats from './components/GenStats';
 
 export default function Home() {

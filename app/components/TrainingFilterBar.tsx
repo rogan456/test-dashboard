@@ -1,20 +1,18 @@
 'use client';
-import { TrashIcon } from '@heroicons/react/24/outline';
-import React, { useMemo, useEffect } from 'react';
+import React from 'react';
 import Select from 'react-select';
+import { TrashIcon } from '@heroicons/react/24/outline';
 import cities from '../data/cities.json';
 import dist from '../data/dist.json';
 
 // Group CityIDs by district
 const districtMap: { [districtId: string]: string[] } = {};
-
 Object.entries(dist).forEach(([cityId, districtId]) => {
   if (!districtMap[districtId]) {
     districtMap[districtId] = [];
   }
   districtMap[districtId].push(cityId);
 });
-
 const districtOptions = Object.entries(districtMap).map(([districtId, cityIds]) => ({
   value: districtId,
   label: `District ${districtId}`,
@@ -22,25 +20,20 @@ const districtOptions = Object.entries(districtMap).map(([districtId, cityIds]) 
 }));
 
 type City = { ID: string | number; CompanySort?: string };
-
 const cityOptions = (Array.isArray(cities) ? cities : Object.values(cities)).map(city => {
   const c = city as City;
   return {
-    value: String(c.ID), // Use the string CityId
+    value: String(c.ID),
     label: c.CompanySort
-      ? c.CompanySort.charAt(0) + c.CompanySort.slice(1).toLowerCase()
+      ? c.CompanySort
+          .split(' ')
+          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+          .join(' ')
       : '',
   };
 });
 
-const activityTypeOptions = [
-  { value: 'call', label: 'Call' },
-  { value: 'email', label: 'Email' },
-  { value: 'visit', label: 'Visit' },
-  { value: 'text', label: 'Text' },
-  { value: 'district meeting', label: 'District Meeting' },
-  { value: 'CALL', label: 'CALL' },
-];
+
 
 const dateOptions = [
   { value: 'last30days', label: 'Last 30 Days' },
@@ -61,28 +54,35 @@ const popOptions = [
   { value: '50000plus', label: '50,000+' },
 ];
 
-interface FilterBarProps {
-  showActivityType?: boolean;
+interface TrainingFilterBarProps {
+  ceuCategories: string[];
+  ceuCategoryFilter: string[];
+  setCeuCategoryFilter: (val: string[]) => void;
+  ceuTypes: string[];
+  ceuTypeFilter: string[];
+  setCeuTypeFilter: (val: string[]) => void;
   cityFilter: string[];
   setCityFilter: (cities: string[]) => void;
-  activityTypeFilter: string[];
-  setActivityTypeFilter: (types: string[]) => void;
+
   districtFilter: string[];
   setDistrictFilter: (districts: string[]) => void;
   dateFilter: string;
   setDateFilter: (val: string) => void;
   customDateRange: { start: string; end: string };
   setCustomDateRange: (range: { start: string; end: string }) => void;
-   populationFilter: string[];
+  populationFilter: string[];
   setPopulationFilter: (pop: string[]) => void;
 }
 
-const FilterBar: React.FC<FilterBarProps> = ({
-  showActivityType = true,
+const TrainingFilterBar: React.FC<TrainingFilterBarProps> = ({
+  ceuCategories,
+  ceuCategoryFilter,
+  setCeuCategoryFilter,
+  ceuTypes,
+  ceuTypeFilter,
+  setCeuTypeFilter,
   cityFilter,
   setCityFilter,
-  activityTypeFilter,
-  setActivityTypeFilter,
   districtFilter,
   setDistrictFilter,
   dateFilter,
@@ -92,56 +92,13 @@ const FilterBar: React.FC<FilterBarProps> = ({
   populationFilter,
   setPopulationFilter,
 }) => {
-  // Filter city options based on selected district(s)
-  {/*const filteredCityOptions = useMemo(() => {
-    if (!districtFilter.length) return cityOptions;
-    const allowedCityIds = districtOptions
-      .filter(d => districtFilter.includes(d.value))
-      .flatMap(d => d.cityIds);
-    return cityOptions.filter(opt => allowedCityIds.includes(opt.value));
-  }, [districtFilter]);
-
-  // Filter district options based on selected city(s)
-  const filteredDistrictOptions = useMemo(() => {
-    if (!cityFilter.length) return districtOptions;
-    return districtOptions.filter(d =>
-      d.cityIds.some(cityId => cityFilter.includes(cityId))
-    );
-  }, [cityFilter]);
-
-  // Reset cityFilter if not in selected district(s)
-  useEffect(() => {
-    if (
-      districtFilter.length &&
-      cityFilter.length &&
-      !cityFilter.every(cityId =>
-        filteredCityOptions.some(opt => opt.value === cityId)
-      )
-    ) {
-      setCityFilter(cityFilter.filter(cityId =>
-        filteredCityOptions.some(opt => opt.value === cityId)
-      ));
-    }
-  }, [districtFilter, cityFilter, filteredCityOptions, setCityFilter]);
-
-  // Reset districtFilter if not in selected city(s)
-  useEffect(() => {
-    if (
-      cityFilter.length &&
-      districtFilter.length &&
-      !districtFilter.every(districtId =>
-        filteredDistrictOptions.some(opt => opt.value === districtId)
-      )
-    ) {
-      setDistrictFilter(districtFilter.filter(districtId =>
-        filteredDistrictOptions.some(opt => opt.value === districtId)
-      ));
-    }
-  }, [cityFilter, districtFilter, filteredDistrictOptions, setDistrictFilter]);*/}
+  const ceuCategoryOptions = ceuCategories.map(c => ({ value: c, label: c }));
+  const ceuTypeOptions = ceuTypes.map(t => ({ value: t, label: t }));
 
   const handleReset = () => {
+    setCeuCategoryFilter([]);
+    setCeuTypeFilter([]);
     setCityFilter([]);
-    setActivityTypeFilter([]);
     setDistrictFilter([]);
     setDateFilter('last30days');
     setCustomDateRange({ start: '', end: '' });
@@ -198,45 +155,49 @@ const FilterBar: React.FC<FilterBarProps> = ({
           />
         </div>
       )}
-      {showActivityType && (
-        <div className="border rounded flex-1 min-w-[140px] max-w-xs">
-          <Select
-            instanceId="activity-type-select"
-            options={activityTypeOptions}
-            placeholder="Activity Type"
-            value={activityTypeOptions.filter(opt => activityTypeFilter.includes(opt.value))}
-            onChange={selected => setActivityTypeFilter(selected ? selected.map((s: any) => s.value) : [])}
-            isClearable
-            isMulti
-          />
-          </div>
-        
-      )}
-        <div className="border rounded flex-1 min-w-[140px] max-w-xs">
-                <Select
-                  instanceId="population-select"
-                  options={popOptions}
-                  placeholder="Population"
-                  value={popOptions.filter(opt => populationFilter.includes(opt.value))}
-                  onChange={selected => setPopulationFilter(selected ? selected.map((s: any) => s.value) : [])}
-                  isClearable
-                  isMulti
-                />
-        </div>
-              
-      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition font-semibold shadow min-w-[100px]">
-        Filter
-      </button>
+      <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+        <Select
+          instanceId="ceu-category-select"
+          options={ceuCategoryOptions}
+          placeholder="CEU Category"
+          value={ceuCategoryOptions.filter(opt => ceuCategoryFilter.includes(opt.value))}
+          onChange={selected => setCeuCategoryFilter(selected ? selected.map((s: any) => s.value) : [])}
+          isClearable
+          isMulti
+        />
+      </div>
+      <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+        <Select
+          instanceId="ceu-type-select"
+          options={ceuTypeOptions}
+          placeholder="CEU Type"
+          value={ceuTypeOptions.filter(opt => ceuTypeFilter.includes(opt.value))}
+          onChange={selected => setCeuTypeFilter(selected ? selected.map((s: any) => s.value) : [])}
+          isClearable
+          isMulti
+        />
+      </div>
+      <div className="border rounded flex-1 min-w-[140px] max-w-xs">
+        <Select
+          instanceId="population-select"
+          options={popOptions}
+          placeholder="Population"
+          value={popOptions.filter(opt => populationFilter.includes(opt.value))}
+          onChange={selected => setPopulationFilter(selected ? selected.map((s: any) => s.value) : [])}
+          isClearable
+          isMulti
+        />
+      </div>
       <button
         type="button"
         onClick={handleReset}
         className="flex items-center justify-center bg-gray-200 text-gray-700 px-3 py-2 rounded hover:bg-gray-300 transition font-semibold shadow min-w-[44px]"
         title="Reset filters"
       >
-        <TrashIcon className="h-5 w-5" />
+        Reset
       </button>
     </div>
   );
 };
 
-export default FilterBar;
+export default TrainingFilterBar;

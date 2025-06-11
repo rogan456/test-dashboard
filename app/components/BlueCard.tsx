@@ -1,9 +1,9 @@
 'use client';
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 interface BlueCardProps {
   title: string;
-  value: number | string;
+  value: number | string | ReactNode;
 }
 
 const BlueCard: React.FC<BlueCardProps> = ({

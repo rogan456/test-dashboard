@@ -1,9 +1,11 @@
-import React from 'react'
+'use client';
+import TrainingClinet from "./TrainingClient";
 
-const page = () => {
+export default function Page() {
   return (
-    <div>page</div>
-  )
+    <div className="bg-white min-h-screen w-full">
+      <TrainingClinet />
+      
+    </div>
+  );
 }
-
-export default page

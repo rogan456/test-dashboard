@@ -1,12 +1,12 @@
 'use client';
 import React, { useState, useTransition, useMemo, useEffect } from 'react';
-import FilterBar from '../components/FilterBar';
-import CollapsibleTable from '../components/ResTable';
-import GeorgiaMap from '../components/GeorgiaMap';
+import FilterBar from '../components/ActivitiesFilterBar';
+import CollapsibleTable from '../components/ActResTable';
+import GeorgiaMap from '../components/ActGeorgiaMap';
 import BlueCard from '../components/BlueCard';
 import BasicSwitches from '../components/Switch';
 import { subDays, subMonths, isAfter, isBefore, parseISO } from 'date-fns';
-
+import cities from '../data/cities.json';
 
 export default function ActivitiesClient() {
   const [rowData, setRowData] = useState<any[]>([]);
@@ -46,6 +46,8 @@ export default function ActivitiesClient() {
   }
   return { startDate, endDate };
 }, [dateFilter, customDateRange]);
+
+
   // Fetch data when date filter changes
   useEffect(() => {
   if (!startDate || !endDate) return;
@@ -117,12 +119,32 @@ export default function ActivitiesClient() {
   return passesLocation && activityMatch && dateMatch && popMatch;
 });
 
+  const allRelevantCityIds = useMemo(() => {
+  const ids = new Set();
 
-  const TOTAL_CITIES = 536;
-  const uniqueCityIds = Array.from(new Set(filteredData.map(row => row.CityId)));
-  const citiesEngaged = uniqueCityIds.length;
-  const citiesNotEngaged = TOTAL_CITIES - citiesEngaged;
-  const totalEngagement = ((citiesEngaged / TOTAL_CITIES) * 100).toFixed(1) + '%';
+  // Add all cities from selected districts
+  if (districtFilter.length) {
+    cities.forEach(city => {
+      if (districtFilter.includes(String(city.GMADIST))) {
+        ids.add(city.ID);
+      }
+    });
+  }
+
+  // Add all selected cities
+  cityFilter.forEach(id => ids.add(id));
+
+  // If no filters, use all cities
+  if (!districtFilter.length && !cityFilter.length) {
+    cities.forEach(city => ids.add(city.ID));
+  }
+
+  return ids;
+}, [districtFilter, cityFilter]);
+  const totalCitiesDynamic = allRelevantCityIds.size;
+  const citiesEngaged = Array.from(new Set(filteredData.map(row => row.CityId))).length;
+  const citiesNotEngaged = totalCitiesDynamic - citiesEngaged;
+  const totalEngagement = ((citiesEngaged / totalCitiesDynamic) * 100).toFixed(1) + '%';
   const cityActivityCounts = Object.values(
     filteredData.reduce((acc, row) => {
       const key = row.CitySort;
@@ -197,9 +219,10 @@ useEffect(() => {
             <div className="flex gap-4 w-full items-center">
               <BlueCard title="Total Activities" value={filteredData.length} />
               <BlueCard
-                  title={flipped ? 'Cities Not Engaged' : 'Cities Engaged'}
-                  value={flipped ? citiesNotEngaged : citiesEngaged}
-                />
+                title={flipped ? 'Cities Not Engaged' : 'Cities Engaged'}
+                value={flipped ? citiesNotEngaged : citiesEngaged}
+              />
+              <BlueCard title="Total Cities" value={totalCitiesDynamic} />
               <BlueCard title="Total engagement" value={totalEngagement} />
               <div className="flex-none w-auto pl-2">
                 <BasicSwitches checked={flipped} onChange={setFlipped} />
