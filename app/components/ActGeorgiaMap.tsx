@@ -162,10 +162,13 @@ export default function GeorgiaMap({ cityActivityData = [], zoomToCities, onCity
     const centerLat = (minLat + maxLat) / 2;
     const lonDiff = Math.abs(maxLon - minLon);
     const latDiff = Math.abs(maxLat - minLat);
-    const zoom = Math.max(
+    const zoom = Math.min(
+    7,
+    Math.max(
       6,
       8 - Math.max(Math.log2(lonDiff + 0.01), Math.log2(latDiff + 0.01))
-    );
+    )
+  );
     setViewState(vs => ({
       ...vs,
       longitude: centerLon,

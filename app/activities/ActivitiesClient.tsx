@@ -5,6 +5,7 @@ import CollapsibleTable from '../components/ActResTable';
 import GeorgiaMap from '../components/ActGeorgiaMap';
 import BlueCard from '../components/BlueCard';
 import BasicSwitches from '../components/Switch';
+import ActFlipResTable from '../components/ActFlipResTable';
 import { subDays, subMonths, isAfter, isBefore, parseISO } from 'date-fns';
 import cities from '../data/cities.json';
 
@@ -182,6 +183,56 @@ useEffect(() => {
     setZoomToCities([]);
   }
 }, [cityFilter, filteredData.length]);
+const dateFilteredData = useMemo(() => {
+  return rowData.filter(row => {
+    let dateMatch = true;
+    if (startDate) {
+      const activityDate = row.ActivityDate ? parseISO(row.ActivityDate) : null;
+      if (activityDate) {
+        if (endDate) {
+          dateMatch = isAfter(activityDate, startDate) && isBefore(activityDate, endDate);
+        } else {
+          dateMatch = isAfter(activityDate, startDate);
+        }
+      }
+    }
+    return dateMatch;
+  });
+}, [rowData, startDate, endDate]);
+const engagedCityIds = new Set(
+  (flipped ? dateFilteredData : filteredData).map(row => row.CityId)
+);
+const notEngagedCities = cities
+  .filter(city => !engagedCityIds.has(city.ID))
+  .map(city => ({
+    CityId: city.ID,
+    CityName: city.CompanySort
+      ? city.CompanySort.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ')
+      : '',
+    Population: (city as any).Population ?? 'N/A'
+  }));
+const [displayedNotEngaged, setDisplayedNotEngaged] = useState(0);
+
+const prevFlipped = React.useRef(flipped);
+
+useEffect(() => {
+  if (flipped && !prevFlipped.current) {
+    // Just flipped: show 0, then update
+    setDisplayedNotEngaged(0);
+    const timeout = setTimeout(() => {
+      setDisplayedNotEngaged(notEngagedCities.length);
+    }, 200);
+    prevFlipped.current = true;
+    return () => clearTimeout(timeout);
+  } else if (flipped) {
+    // Already flipped, just update to new value immediately
+    setDisplayedNotEngaged(notEngagedCities.length);
+  } else {
+    // Not flipped, always 0
+    setDisplayedNotEngaged(0);
+    prevFlipped.current = false;
+  }
+}, [flipped, notEngagedCities.length]);
 
   return (
   <div className="px-6 py-6 flex flex-col gap-6">
@@ -206,29 +257,54 @@ useEffect(() => {
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="border w-full lg:w-1/2">
             <GeorgiaMap
-                cityActivityData={cityActivityCounts.map(({ CitySort, count, Population }) => ({
-                  CityName: CitySort,
-                  count,
-                  Population
-                }))}
+                cityActivityData={
+                  flipped
+                    ? notEngagedCities.map(({ CityName, Population }) => ({
+                        CityName,
+                        count: 0,
+                        Population
+                      }))
+                    : cityActivityCounts.map(({ CitySort, count, Population }) => ({
+                        CityName: CitySort,
+                        count,
+                        Population
+                      }))
+                }
                 zoomToCities={zoomToCities}
                 onCitySelect={handleCitySelect}
-                />
+              />
           </div>
           <div className="w-full lg:w-1/2 flex flex-col gap-4">
             <div className="flex gap-4 w-full items-center">
-              <BlueCard title="Total Activities" value={filteredData.length} />
+              <BlueCard
+                title="Total Activities"
+                value={flipped ? "--" : filteredData.length}
+              />
               <BlueCard
                 title={flipped ? 'Cities Not Engaged' : 'Cities Engaged'}
-                value={flipped ? citiesNotEngaged : citiesEngaged}
+                value={flipped ? displayedNotEngaged : citiesEngaged}
               />
-              <BlueCard title="Total Cities" value={totalCitiesDynamic} />
-              <BlueCard title="Total engagement" value={totalEngagement} />
+              <BlueCard
+                title="Total Cities"
+                value={flipped ? "--" : totalCitiesDynamic}
+              />
+              <BlueCard
+                title={flipped ? "Percent Disengagement" : "Total engagement"}
+                value={
+                  flipped
+                    ? `${((notEngagedCities.length / cities.length) * 100).toFixed(1)}%`
+                    : totalEngagement
+                }
+              />
               <div className="flex-none w-auto pl-2">
                 <BasicSwitches checked={flipped} onChange={setFlipped} />
               </div>
             </div>
-            <CollapsibleTable data={filteredData} />
+            {flipped ? (
+              <ActFlipResTable notEngagedCities={notEngagedCities} />
+            ) : (
+              <CollapsibleTable data={filteredData} />
+            )}
           </div>
         </div>
       </div>
